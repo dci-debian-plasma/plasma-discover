@@ -1,0 +1,21 @@
+#!/usr/bin/make -f
+
+include /usr/share/pkg-kde-tools/qt-kde-team/3/debian-qt-kde.mk
+
+DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
+
+override_dh_strip:
+	$(overridden_command) --dbg-package=discover-dbg
+
+# Do not pull plugins into the shlibs file, it makes lintian angry.
+# This happens because dh_makeshlibs will look for sonames matching
+# (.*)-(.*)\.so where it assumes \1 is the library name and \2 is the version.
+# This will then assume that libfoo-backend.so has name 'libfoo' and version
+# 'backend' which makes for bogus, pointless, silly shlibs entries.
+# Couldn't be bothered to report this - sitter, 2015
+override_dh_makeshlibs:
+	$(overridden_command) -Xusr/lib/$(DEB_HOST_MULTIARCH)/qt5/plugins/discover* -V
+
+# FIXME: tests are broken at this time
+override_dh_auto_test:
+	:

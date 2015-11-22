@@ -1,0 +1,5 @@
+discover (4:5.4.95-0ubuntu1) UNRELEASED; urgency=medium
+
+  * Initial package split upstream from Muon
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Sun, 22 Nov 2015 14:22:31 +0000
