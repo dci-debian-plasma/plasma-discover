@@ -48,7 +48,6 @@ Depends: app-install-data,
          muon-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
-Recommends: app-install-data-partner, ubuntu-sso-client
 Description: Utility for browsing, installing, and removing applications
  Muon Discover will help you browse through the huge applications library you
  have available and help you find the applications you're looking for.
@@ -75,7 +74,6 @@ Depends: libdiscover (= ${binary:Version}),
          update-notifier-common,
          ${misc:Depends},
          ${shlibs:Depends}
-Recommends: ubuntu-release-upgrader-qt
 Description: update notifier for KDE
  The Muon Notifier is an update notification daemon for KDE. It uses the KDE
  Daemon frame (KDED) framework to present the user with update notifications,
@@ -116,7 +114,7 @@ Section: debug
 Priority: extra
 Architecture: any
 Depends: muon-discover (= ${binary:Version}), ${misc:Depends}
-Recommends: kdelibs5-dbg, qapt-dbg
+Recommends: qapt-dbg
 Description: Discover debugging symbols
  This package contains debugging symbols for Discover.
  When Discover crashes, in most cases this package is
