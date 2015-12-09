@@ -1,5 +1,6 @@
-discover (4:5.4.95-0ubuntu1) UNRELEASED; urgency=medium
+org-kde-plasma-discover (4:5.5.0-1~) UNRELEASED; urgency=medium
 
+ [ Jonathan Riddell ]
   * Initial package split upstream from Muon
 
- -- Jonathan Riddell <jriddell@ubuntu.com>  Sun, 22 Nov 2015 14:22:31 +0000
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 09 Dec 2015 13:11:32 +0100
