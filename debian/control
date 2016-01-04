@@ -86,7 +86,6 @@ Package: libdiscover
 Architecture: any
 Depends: policykit-1,
          python3,
-         software-properties-kde,
          ${misc:Depends},
          ${shlibs:Depends}
 Breaks: libmuon,
