@@ -15,3 +15,8 @@ plasma-discover (5.5.95-1) experimental; urgency=medium
   * Update debian/copyright
 
  -- Matthias Klumpp <mak@debian.org>  Sat, 12 Mar 2016 16:45:56 +0100
+org-kde-plasma-discover (5.5.0-1~) UNRELEASED; urgency=medium
+
+  * Initial package split upstream from Muon
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 09 Dec 2015 13:11:32 +0100
