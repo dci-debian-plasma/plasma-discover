@@ -1,19 +1,9 @@
-discover (4:5.5.2-0ubuntu1) UNRELEASED; urgency=medium
-
-  [ Scarlett Clark ]
-  * New upstream release Xenial.
-
-  [ Clive Johnston ]
-  * New upstream release
-
- -- Clive Johnston <clivejo@aol.com>  Tue, 29 Dec 2015 22:30:49 +0000
-
-discover (4:5.4.95-0ubuntu1) UNRELEASED; urgency=medium
+muon-discover (4:5.5.2-0ubuntu1) UNRELEASED; urgency=medium
 
   [ Jonathan Riddell ]
   * Initial package split upstream from Muon
 
-  [ Scarlett Clark ]
-  * Debian merge: No remaining changes. 
+  [ Clive Johnston ]
+  * New upstream release
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Sun, 22 Nov 2015 14:22:31 +0000

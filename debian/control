@@ -1,4 +1,4 @@
-Source: discover
+Source: muon-discover
 Section: kde
 Priority: optional
 Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
@@ -111,7 +111,7 @@ Description: Muon package manager suite (common data files)
  .
  This package contains data files shared by various parts of the Muon suite.
 
-Package: discover-dbg
+Package: muon-discover-dbg
 Section: debug
 Priority: extra
 Architecture: any
