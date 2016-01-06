@@ -72,10 +72,9 @@ Architecture: any
 Depends: libdiscover (= ${binary:Version}),
          muon-common (= ${source:Version}),
          muon-updater,
-         update-notifier-common,
          ${misc:Depends},
          ${shlibs:Depends}
-Recommends: ubuntu-release-upgrader-qt
+Recommends: ubuntu-release-upgrader-qt, update-notifier-common
 Description: update notifier for KDE
  The Muon Notifier is an update notification daemon for KDE. It uses the KDE
  Daemon frame (KDED) framework to present the user with update notifications,
