@@ -1,2 +1,3 @@
 ./usr/bin/muon-exporter
-usr/share/locale/*/LC_MESSAGES/muon-exporter.mo
+./usr/share/locale/*/LC_MESSAGES/muon-exporter.mo
+./usr/lib/*/libMuonApt.a
