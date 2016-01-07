@@ -1,9 +1,10 @@
-muon-discover (4:5.5.2-0ubuntu1) UNRELEASED; urgency=medium
+muon-discover (4:5.5.3-0ubuntu1) UNRELEASED; urgency=medium
 
   [ Jonathan Riddell ]
   * Initial package split upstream from Muon
 
   [ Clive Johnston ]
   * New upstream release
+  * New upstream release
 
- -- Jonathan Riddell <jriddell@ubuntu.com>  Sun, 22 Nov 2015 14:22:31 +0000
+ -- Clive Johnston <clivejo@aol.com>  Thu, 07 Jan 2016 17:58:43 +0000
