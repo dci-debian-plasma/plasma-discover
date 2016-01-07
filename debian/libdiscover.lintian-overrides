@@ -1,0 +1,4 @@
+libdiscover: package-name-doesnt-match-sonames libDiscoverCommon libDiscoverNotifiers
+libdiscover: shlib-without-versioned-soname usr/lib/x86_64-linux-gnu/libDiscoverNotifiers.so libDiscoverNotifiers.so
+libdiscover: shlib-without-versioned-soname usr/lib/x86_64-linux-gnu/libDiscoverCommon.so libDiscoverCommon.so
+libdiscover: postinst-must-call-ldconfig usr/lib/x86_64-linux-gnu/libDiscoverNotifiers.so
