@@ -6,4 +6,7 @@ muon-discover (4:5.5.2-0ubuntu1) UNRELEASED; urgency=medium
   [ Clive Johnston ]
   * New upstream release
 
+  [ Bhushan Shah ]
+  * Make software-properties-kde a recommends for libdiscover
+
  -- Jonathan Riddell <jriddell@ubuntu.com>  Sun, 22 Nov 2015 14:22:31 +0000

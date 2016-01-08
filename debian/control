@@ -86,7 +86,6 @@ Package: libdiscover
 Architecture: any
 Depends: policykit-1,
          python3,
-         software-properties-kde,
          ${misc:Depends},
          ${shlibs:Depends}
 Breaks: libmuon,
@@ -97,6 +96,7 @@ Replaces: libmuon,
           libmuonprivate1,
           libmuonprivate2,
           muon-installer (<< 1.3.65-0ubuntu2)
+Recommends: software-properties-kde
 Description: Runtime files for the Discover package management suite
  The Discover package management suite is a collection of package management
  applications built on the KDE platform.
