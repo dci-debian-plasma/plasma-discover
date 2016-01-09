@@ -1,4 +1,4 @@
-Source: muon-discover
+Source: plasma-discover
 Section: kde
 Priority: optional
 Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
