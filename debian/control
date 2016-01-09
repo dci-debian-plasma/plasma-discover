@@ -40,47 +40,81 @@ Vcs-Browser: http://anonscm.debian.org/cgit/pkg-kde/plasma/discover.git
 Vcs-Git: git://anonscm.debian.org/pkg-kde/plasma/discover.git
 
 Package: muon-discover
+Architecture: all
+Section: oldlibs
+Priority: extra
+Depends: plasma-discover, ${misc:Depends}
+Description: Transitional package for plasma-discover
+ This is a transitional package for plasma-discover and can safely be
+ removed after installation
+
+Package: muon-updater
+Architecture: all
+Section: oldlibs
+Priority: extra
+Depends: plasma-discover-updater, ${misc:Depends}
+Description: Transitional package for plasma-discover-updater
+ This is a transitional package for plasma-discover-updater and can safely be
+ removed after installation
+
+Package: muon-notifier
+Architecture: all
+Section: oldlibs
+Priority: extra
+Depends: plasma-discover-notifier, ${misc:Depends}
+Description: Transitional package for plasma-discover-notifier
+ This is a transitional package for plasma-discover-notifier and can safely be
+ removed after installation
+
+Package: plasma-discover
 Architecture: any
 Depends: app-install-data,
          apt-xapian-index,
          libdiscover (= ${binary:Version}),
          libqapt3-runtime,
-         muon-common (= ${source:Version}),
+         plasma-discover-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
+Breaks: muon-discover (<< 4:5.5.3a)
+Replaces: muon-discover (<< 4:5.5.3a)
 Recommends: app-install-data-partner, ubuntu-sso-client
 Description: Utility for browsing, installing, and removing applications
- Muon Discover will help you browse through the huge applications library you
+ Plasma Discover will help you browse through the huge applications library you
  have available and help you find the applications you're looking for.
  .
  To install or remove software using the Center, you need administrator
  access on the computer.
 
-Package: muon-updater
+Package: plasma-discover-updater
 Architecture: any
 Depends: libdiscover (= ${binary:Version}),
          libqapt3-runtime,
          ${misc:Depends},
          ${shlibs:Depends}
-Recommends: muon-notifier
+Recommends: plasma-discover-notifier
+Breaks: muon-updater (<< 4:5.5.3a)
+Replaces: muon-updater (<< 4:5.5.3a)
 Description: update manager for KDE
- Muon Updater is a graphical update manager for KDE. It is part of the Muon
- family of software and provides an interface similar to that of Muon.
+ Plasma Discover Updater is a graphical update manager for KDE. It is part of
+ the Discover family of software and provides an interface similar to that of
+ Discover.
 
-Package: muon-notifier
+Package: plasma-discover-notifier
 Architecture: any
 Depends: libdiscover (= ${binary:Version}),
-         muon-common (= ${source:Version}),
-         muon-updater,
+         plasma-discover-common (= ${source:Version}),
+         plasma-discover-updater,
          update-notifier-common,
          ${misc:Depends},
          ${shlibs:Depends}
 Recommends: ubuntu-release-upgrader-qt
+Breaks: muon-notifier (<< 4:5.5.3a)
+Replaces: muon-notifier (<< 4:5.5.3a)
 Description: update notifier for KDE
- The Muon Notifier is an update notification daemon for KDE. It uses the KDE
- Daemon frame (KDED) framework to present the user with update notifications,
- providing an opportunity to launch the Muon Updater to deal with these
- updates.
+ The Discover Notifier is an update notification daemon for KDE. It uses the
+ KDE Daemon frame (KDED) framework to present the user with update
+ notifications, providing an opportunity to launch the Discover Updater to deal
+ with these updates.
 
 Package: libdiscover
 Architecture: any
@@ -103,19 +137,22 @@ Description: Runtime files for the Discover package management suite
  .
  This package contains runtime libraries
 
-Package: muon-common
+Package: plasma-discover-common
 Architecture: all
 Depends: ${misc:Depends}
-Description: Muon package manager suite (common data files)
- Muon is a graphical package manager for the Plasma workspace.
+Breaks: muon-common (<< 4:5.5.3a)
+Replaces: muon-common (<< 4:5.5.3a)
+Description: Discover package manager suite (common data files)
+ Discover is a graphical package manager for the Plasma workspace.
  .
- This package contains data files shared by various parts of the Muon suite.
+ This package contains data files shared by various parts of the
+ Discover suite.
 
-Package: muon-discover-dbg
+Package: plasma-discover-dbg
 Section: debug
 Priority: extra
 Architecture: any
-Depends: muon-discover (= ${binary:Version}), ${misc:Depends}
+Depends: plasma-discover (= ${binary:Version}), ${misc:Depends}
 Recommends: kdelibs5-dbg, qapt-dbg
 Description: Discover debugging symbols
  This package contains debugging symbols for Discover.
