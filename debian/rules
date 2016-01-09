@@ -4,8 +4,17 @@ include /usr/share/pkg-kde-tools/qt-kde-team/3/debian-qt-kde.mk
 
 DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 
+DEB_VERSION_UPSTREAM_REVISION := $(shell dpkg-parsechangelog | awk '/^Version: / { print $$2 }' | sed -e 's/^[0-9]*://')
+
 override_dh_strip:
 	$(overridden_command) --dbg-package=muon-discover-dbg
+
+override_dh_gencontrol:
+	dh_gencontrol -pmuon-discover -- -4:$(DEB_VERSION_UPSTREAM_REVISION)
+	dh_gencontrol -pmuon-updater -- -4:$(DEB_VERSION_UPSTREAM_REVISION)
+	dh_gencontrol -pmuon-notifier -- -4:$(DEB_VERSION_UPSTREAM_REVISION)
+	dh_gencontrol -pmuon-common -- -4:$(DEB_VERSION_UPSTREAM_REVISION)
+	dh_gencontrol --remaining-packages
 
 # Do not pull plugins into the shlibs file, it makes lintian angry.
 # This happens because dh_makeshlibs will look for sonames matching
