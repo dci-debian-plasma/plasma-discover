@@ -3,9 +3,7 @@
 include /usr/share/pkg-kde-tools/qt-kde-team/3/debian-qt-kde.mk
 
 DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
-
-override_dh_strip:
-	$(overridden_command) --dbg-package=discover-dbg
+DEB_VERSION_UPSTREAM_REVISION := $(shell dpkg-parsechangelog | awk '/^Version: / { print $$2 }' | sed -e 's/^[0-9]*://')
 
 # Do not pull plugins into the shlibs file, it makes lintian angry.
 # This happens because dh_makeshlibs will look for sonames matching
@@ -14,8 +12,17 @@ override_dh_strip:
 # 'backend' which makes for bogus, pointless, silly shlibs entries.
 # Couldn't be bothered to report this - sitter, 2015
 override_dh_makeshlibs:
-	$(overridden_command) -Xusr/lib/$(DEB_HOST_MULTIARCH)/qt5/plugins/discover* -V
+	dh_makeshlibs -Xusr/lib/$(DEB_HOST_MULTIARCH)/qt5/plugins/discover* -V
 
-# FIXME: tests are broken at this time
+override_dh_gencontrol:
+	dh_gencontrol -pmuon-discover -- -v4:$(DEB_VERSION_UPSTREAM_REVISION)
+	dh_gencontrol -pmuon-updater -- -v4:$(DEB_VERSION_UPSTREAM_REVISION)
+	dh_gencontrol -pmuon-notifier -- -v4:$(DEB_VERSION_UPSTREAM_REVISION)
+	dh_gencontrol --remaining-packages
+
+override_dh_install:
+	dh_install --list-missing
+
+# FIXME: tests are broken at time
 override_dh_auto_test:
 	:
