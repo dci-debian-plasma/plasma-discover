@@ -1,4 +1,4 @@
-plasma-discover (5.5.3-1~) UNRELEASED; urgency=medium
+plasma-discover (5.5.3+git20160111-1~) UNRELEASED; urgency=medium
 
   [ Jonathan Riddell ]
   * Initial package split upstream from Muon
