@@ -104,9 +104,9 @@ Section: oldlibs
 Priority: extra
 Depends: plasma-discover,
          ${misc:Depends}
-Description: Transitional package for plasma-discover
+Description: Transitional package (muon-discover -> plasma-discover)
  This is a transitional package for plasma-discover and can safely be
- removed after installation
+ removed.
 
 Package: muon-updater
 Architecture: all
@@ -114,9 +114,9 @@ Section: oldlibs
 Priority: extra
 Depends: plasma-discover-updater,
          ${misc:Depends}
-Description: Transitional package for plasma-discover-updater
- This is a transitional package for plasma-discover-updater and can safely be
- removed after installation
+Description: Transitional package (muon-updater -> plasma-discover-updater)
+ This is a transitional package updating muon-updater to plasma-discover-updater
+ and can safely be removed.
 
 Package: muon-notifier
 Architecture: all
@@ -124,6 +124,6 @@ Section: oldlibs
 Priority: extra
 Depends: plasma-discover-updater,
          ${misc:Depends}
-Description: Transitional package for plasma-discover-updater
- This is a transitional package for plasma-discover-updater and can safely be
- removed after installation
+Description: Transitional package (muon-notifier -> plasma-discover-updater)
+ This is a transitional package updating muon-notifier to
+ plasma-discover-updater and can safely be removed.
