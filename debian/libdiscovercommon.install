@@ -1,0 +1,9 @@
+etc/dbus-1/system.d/org.kde.muon.repo.conf
+usr/lib/*/libDiscoverCommon.so
+usr/lib/*/libDiscoverNotifiers.so
+usr/lib/*/libexec/muon_repo_helper
+usr/lib/*/qt5/plugins/discover-notifier/
+usr/lib/*/qt5/plugins/discover/
+usr/lib/*/qt5/qml/org/kde/discover/
+usr/share/libdiscover/
+usr/share/locale/*/LC_MESSAGES/libdiscover.mo
