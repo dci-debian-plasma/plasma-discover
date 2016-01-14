@@ -1,3 +1,20 @@
+plasma-discover (5.5.3+git20160111-1~) UNRELEASED; urgency=medium
+
+  [ Jonathan Riddell ]
+  * Initial package split upstream from Muon.
+
+  [ Matthias Klumpp ]
+  * Rename the packages to plasma-discover-*,
+    add transitional packages for the old muon-* packages.
+  * Merge update notifier into updater package.
+  * Update dependencies to upstream's current requirements.
+  * Drop some cruft postinst calls and runtime dependencies.
+  * Override Lintian warnings concerning Discover's private
+    library in /usr/lib.
+  * Update debian/watch
+  * Update Vcs-* URLs
+
+ -- Matthias Klumpp <mak@debian.org>  Mon, 11 Jan 2016 22:45:56 +0100
 plasma-discover (5.5.3a-0ubuntu1) UNRELEASED; urgency=medium
 
   [ Jonathan Riddell ]
