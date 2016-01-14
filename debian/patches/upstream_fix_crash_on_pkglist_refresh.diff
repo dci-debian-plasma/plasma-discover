@@ -1,0 +1,30 @@
+From 811cca260f389271c330be43e068aa70f7165ba7 Mon Sep 17 00:00:00 2001
+From: Aleix Pol <aleixpol@kde.org>
+Date: Thu, 14 Jan 2016 15:43:51 +0100
+Subject: [PATCH 1/2] Fix crash
+
+Makes sure that we don't update the state twice in a row. Otherwise
+we'd have a crash on the null pointer.
+
+BUG: 357791
+---
+ libdiscover/backends/ApplicationBackend/ApplicationNotifier.cpp | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/libdiscover/backends/ApplicationBackend/ApplicationNotifier.cpp b/libdiscover/backends/ApplicationBackend/ApplicationNotifier.cpp
+index 566b7fb..25abc99 100644
+--- a/libdiscover/backends/ApplicationBackend/ApplicationNotifier.cpp
++++ b/libdiscover/backends/ApplicationBackend/ApplicationNotifier.cpp
+@@ -118,6 +118,9 @@ void ApplicationNotifier::recheckSystemUpdateNeeded()
+     
+ void ApplicationNotifier::parseUpdateInfo()
+ {
++    if (!m_updateCheckerProcess)
++        return;
++
+ #warning why does this parse stdout and not use qapt, wtf...
+     m_securityUpdates = 0;
+     m_normalUpdates = 0;
+-- 
+2.1.4
+

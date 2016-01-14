@@ -1,0 +1,29 @@
+From 2ccd19a67fbd716093b31cf60bcd7c5c3643c960 Mon Sep 17 00:00:00 2001
+From: Aleix Pol <aleixpol@kde.org>
+Date: Thu, 14 Jan 2016 15:56:43 +0100
+Subject: [PATCH 2/2] Prevent misleading notification
+
+BUG: 357613
+---
+ notifier/DiscoverNotifier.cpp | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+diff --git a/notifier/DiscoverNotifier.cpp b/notifier/DiscoverNotifier.cpp
+index 4e803a8..acf93b0 100644
+--- a/notifier/DiscoverNotifier.cpp
++++ b/notifier/DiscoverNotifier.cpp
+@@ -73,6 +73,11 @@ bool DiscoverNotifier::isSystemUpToDate() const
+ 
+ void DiscoverNotifier::showUpdatesNotification()
+ {
++    if (state()==NoUpdates) {
++        //it's not very helpful to notify that everyting is in order
++        return;
++    }
++
+     //TODO: Better message strings
+     QString msg = message();
+     if (m_verbose) {
+-- 
+2.1.4
+

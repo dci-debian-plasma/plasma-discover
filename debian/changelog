@@ -12,5 +12,8 @@ plasma-discover (5.5.3a-0ubuntu1) UNRELEASED; urgency=medium
     drop and prepare for the coming application rename in plasma 5.6
   * Add transitional packages for muon-discover, muon-updater and
     muon-notifier to help with upgrades
+  * Add patches from the Plasma/5.5 branch:
+    - upstream_fix_crash_on_pkglist_refresh.diff
+    - upstream_prevent_misleading_notification.diff
 
  -- Clive Johnston <clivejo@aol.com>  Thu, 07 Jan 2016 17:58:43 +0000
