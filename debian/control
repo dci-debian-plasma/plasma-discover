@@ -42,7 +42,9 @@ Vcs-Git: git://anonscm.debian.org/pkg-kde/plasma/plasma-discover.git
 
 Package: plasma-discover
 Architecture: any
-Depends: appstream,
+Depends: app-install-data,
+         apt-xapian-index,
+         appstream,
          libdiscovercommon (= ${binary:Version}),
          libqapt3-runtime,
          plasma-discover-common (= ${source:Version}),
@@ -50,7 +52,7 @@ Depends: appstream,
          ${shlibs:Depends}
 Breaks: muon-discover (<< 4:5.5.3a)
 Replaces: muon-discover (<< 4:5.5.3a)
-Recommends: software-properties-kde
+Recommends: software-properties-kde, app-install-data-partner
 Suggests: plasma-discover-updater
 Description: Utility for browsing, installing, and removing applications
  Plasma Discover will help you browse through the huge applications library you
