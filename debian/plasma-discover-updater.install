@@ -2,3 +2,9 @@ usr/bin/muon-updater
 usr/share/applications/muon-updater.desktop
 usr/share/kxmlgui5/muonupdater/
 usr/share/locale/*/LC_MESSAGES/muon-updater.mo
+usr/share/locale/*/LC_MESSAGES/muon-notifier.mo
+usr/share/knotifications5/
+usr/share/kservices5/plasma-applet-org.kde.discovernotifier.desktop
+usr/share/locale/*/LC_MESSAGES/plasma_applet_org.kde.muonnotifier.mo
+usr/share/plasma/plasmoids/org.kde.discovernotifier/
+usr/share/polkit-1/actions/org.kde.muon.repo.policy
