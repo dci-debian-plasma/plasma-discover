@@ -1,7 +1,16 @@
-plasma-discover (5.5.3+git20160111-1~) UNRELEASED; urgency=medium
+plasma-discover (5.5.3a-0ubuntu1) UNRELEASED; urgency=medium
 
   [ Jonathan Riddell ]
-  * Initial package split upstream from Muon.
+  * Initial package split upstream from Muon
+
+  [ Clive Johnston ]
+  * New upstream release
+  * New upstream release
+
+  [ Philip Muškovac ]
+  * Add patches from the Plasma/5.5 branch:
+    - upstream_fix_crash_on_pkglist_refresh.diff
+    - upstream_prevent_misleading_notification.diff
 
   [ Matthias Klumpp ]
   * Rename the packages to plasma-discover-*,
@@ -13,24 +22,5 @@ plasma-discover (5.5.3+git20160111-1~) UNRELEASED; urgency=medium
     library in /usr/lib.
   * Update debian/watch
   * Update Vcs-* URLs
-
- -- Matthias Klumpp <mak@debian.org>  Mon, 11 Jan 2016 22:45:56 +0100
-plasma-discover (5.5.3a-0ubuntu1) UNRELEASED; urgency=medium
-
-  [ Jonathan Riddell ]
-  * Initial package split upstream from Muon
-
-  [ Clive Johnston ]
-  * New upstream release
-  * New upstream release
-
-  [ Philip Muškovac ]
-  * Rename the muon packages to plasma-discover-* to help handling the epoch
-    drop and prepare for the coming application rename in plasma 5.6
-  * Add transitional packages for muon-discover, muon-updater and
-    muon-notifier to help with upgrades
-  * Add patches from the Plasma/5.5 branch:
-    - upstream_fix_crash_on_pkglist_refresh.diff
-    - upstream_prevent_misleading_notification.diff
 
  -- Clive Johnston <clivejo@aol.com>  Thu, 07 Jan 2016 17:58:43 +0000
