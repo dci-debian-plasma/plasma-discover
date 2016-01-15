@@ -69,10 +69,12 @@ Depends: libdiscovercommon (= ${binary:Version}),
          ${shlibs:Depends}
 Breaks: muon-notifier (<< 4:5.5.3a),
         muon-updater (<< 4:5.5.3a),
-        plasma-discover-notifier
+        plasma-discover-notifier,
+        libdiscover
 Replaces: muon-notifier (<< 4:5.5.3a),
           muon-updater (<< 4:5.5.3a),
-          plasma-discover-notifier
+          plasma-discover-notifier,
+          libdiscover
 Description: update manager for KDE
  Plasma Discover Updater is a graphical update manager for KDE. It is part of
  the Discover family of software and provides an interface similar to that of
