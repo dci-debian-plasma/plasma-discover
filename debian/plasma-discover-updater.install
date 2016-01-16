@@ -1,8 +1,8 @@
-usr/bin/muon-updater
-usr/share/applications/muon-updater.desktop
+usr/bin/plasma-discover-updater
+usr/share/applications/plasma-discover-updater.desktop
 usr/share/kxmlgui5/muonupdater/
-usr/share/locale/*/LC_MESSAGES/muon-updater.mo
-usr/share/locale/*/LC_MESSAGES/muon-notifier.mo
+usr/share/locale/*/LC_MESSAGES/plasma-discover-updater.mo
+usr/share/locale/*/LC_MESSAGES/plasma-discover-notifier.mo
 usr/share/knotifications5/
 usr/share/kservices5/plasma-applet-org.kde.discovernotifier.desktop
 usr/share/locale/*/LC_MESSAGES/plasma_applet_org.kde.muonnotifier.mo
