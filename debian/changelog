@@ -1,12 +1,26 @@
-muon-discover (4:5.5.2-0ubuntu1) UNRELEASED; urgency=medium
+plasma-discover (5.5.3a-0ubuntu1) UNRELEASED; urgency=medium
 
   [ Jonathan Riddell ]
   * Initial package split upstream from Muon
 
   [ Clive Johnston ]
   * New upstream release
+  * New upstream release
 
-  [ Bhushan Shah ]
-  * Make software-properties-kde a recommends for libdiscover
+  [ Philip Muškovac ]
+  * Add patches from the Plasma/5.5 branch:
+    - upstream_fix_crash_on_pkglist_refresh.diff
+    - upstream_prevent_misleading_notification.diff
 
- -- Jonathan Riddell <jriddell@ubuntu.com>  Sun, 22 Nov 2015 14:22:31 +0000
+  [ Matthias Klumpp ]
+  * Rename the packages to plasma-discover-*,
+    add transitional packages for the old muon-* packages.
+  * Merge update notifier into updater package.
+  * Update dependencies to upstream's current requirements.
+  * Drop some cruft postinst calls and runtime dependencies.
+  * Override Lintian warnings concerning Discover's private
+    library in /usr/lib.
+  * Update debian/watch
+  * Update Vcs-* URLs
+
+ -- Clive Johnston <clivejo@aol.com>  Thu, 07 Jan 2016 17:58:43 +0000
