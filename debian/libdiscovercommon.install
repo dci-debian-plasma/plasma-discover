@@ -7,4 +7,3 @@ usr/lib/*/qt5/plugins/discover/
 usr/lib/*/qt5/qml/org/kde/discover/
 usr/share/dbus-1/system-services/org.kde.muon.repo.service
 usr/share/libdiscover/
-usr/share/locale/*/LC_MESSAGES/libdiscover.mo

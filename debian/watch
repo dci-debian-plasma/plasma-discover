@@ -1,3 +1,3 @@
 version=3
-http://download.kde.org/unstable/plasma/([\d.]+)/plasma-discover-([\d.]+)\.tar\.xz
-http://download.kde.org/stable/plasma/([\d.]+)/plasma-discover-([\d.]+)\.tar\.xz
+http://download.kde.org/unstable/plasma/([\d.]+)/discover-([\d.]+)\.tar\.xz
+http://download.kde.org/stable/plasma/([\d.]+)/discover-([\d.]+)\.tar\.xz
