@@ -1,4 +1,4 @@
-plasma-discover (5.5.4-0ubuntu1) UNRELEASED; urgency=medium
+plasma-discover (5.5.4-0ubuntu1) xenial; urgency=medium
 
   [ Jonathan Riddell ]
   * Initial package split upstream from Muon
@@ -22,4 +22,4 @@ plasma-discover (5.5.4-0ubuntu1) UNRELEASED; urgency=medium
   * Update debian/watch
   * Update Vcs-* URLs
 
- -- Clive Johnston <clivejo@aol.com>  Thu, 07 Jan 2016 17:58:43 +0000
+ -- Clive Johnston <clivejo@aol.com>  Mon, 07 Mar 2016 21:26:27 +0100
