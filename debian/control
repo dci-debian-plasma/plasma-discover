@@ -41,7 +41,7 @@ Vcs-Git: git://anonscm.debian.org/pkg-kde/plasma/plasma-discover.git
 Package: plasma-discover
 Architecture: any
 Depends: appstream,
-         libdiscovercommon (= ${binary:Version}),
+         plasma-discover-private (= ${binary:Version}),
          libqapt3-runtime,
          plasma-discover-common (= ${source:Version}),
          ${misc:Depends},
@@ -59,7 +59,7 @@ Description: Utility for browsing, installing, and removing applications
 
 Package: plasma-discover-updater
 Architecture: any
-Depends: libdiscovercommon (= ${binary:Version}),
+Depends: plasma-discover-private (= ${binary:Version}),
          libqapt3-runtime,
          ${misc:Depends},
          ${shlibs:Depends}
@@ -73,7 +73,7 @@ Description: update manager for KDE
  the Discover family of software and provides an interface similar to that of
  Discover.
 
-Package: libdiscovercommon
+Package: plasma-discover-private
 Architecture: any
 Depends: policykit-1,
          python3,
@@ -81,7 +81,7 @@ Depends: policykit-1,
          ${shlibs:Depends}
 Breaks: libmuon (<< 4:5.5.3a)
 Replaces: libmuon (<< 4:5.5.3a)
-Description: Shared runtime files for the Discover package management suite
+Description: Private runtime libraries for the Discover package management suite
  The Discover package management suite is a collection of package management
  applications built on the KDE platform.
  .

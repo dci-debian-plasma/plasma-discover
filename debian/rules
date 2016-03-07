@@ -22,11 +22,11 @@ override_dh_gencontrol:
 
 override_dh_lintian:
 	sed -e "s/@DEB_HOST_MULTIARCH@/$(DEB_HOST_MULTIARCH)/g" \
-		$(CURDIR)/debian/libdiscovercommon.lintian-overrides.in > $(CURDIR)/debian/libdiscovercommon.lintian-overrides
+		$(CURDIR)/debian/plasma-discover-private.lintian-overrides.in > $(CURDIR)/debian/plasma-discover-private.lintian-overrides
 	dh_lintian
 
 override_dh_clean:
-	rm -f $(CURDIR)/debian/libdiscovercommon.lintian-overrides
+	rm -f $(CURDIR)/debian/plasma-discover-private.lintian-overrides
 	dh_clean
 
 # FIXME: tests are broken at time
