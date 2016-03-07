@@ -41,9 +41,9 @@ Vcs-Git: git://anonscm.debian.org/pkg-kde/plasma/plasma-discover.git
 Package: plasma-discover
 Architecture: any
 Depends: appstream,
-         plasma-discover-private (= ${binary:Version}),
          libqapt3-runtime,
          plasma-discover-common (= ${source:Version}),
+         plasma-discover-private (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
 Breaks: muon-discover (<< 4:5.5.3a)
@@ -59,8 +59,8 @@ Description: Utility for browsing, installing, and removing applications
 
 Package: plasma-discover-updater
 Architecture: any
-Depends: plasma-discover-private (= ${binary:Version}),
-         libqapt3-runtime,
+Depends: libqapt3-runtime,
+         plasma-discover-private (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
 Recommends: plasma-discover-notifier

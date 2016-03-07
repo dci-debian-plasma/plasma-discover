@@ -1,4 +1,0 @@
-plasma-discover-private: shlib-without-versioned-soname usr/lib/@DEB_HOST_MULTIARCH@/libDiscoverNotifiers.so libDiscoverNotifiers.so
-plasma-discover-private: shlib-without-versioned-soname usr/lib/@DEB_HOST_MULTIARCH@/libDiscoverCommon.so libDiscoverCommon.so
-plasma-discover-private: postinst-must-call-ldconfig usr/lib/@DEB_HOST_MULTIARCH@/libDiscoverNotifiers.so
-plasma-discover-private: package-name-doesnt-match-sonames libDiscoverCommon libDiscoverNotifiers
