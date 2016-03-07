@@ -1,0 +1,49 @@
+From: Matthias Klumpp <matthias@tenstral.net>
+Date: Mon, 07 Mar 2016 22:29:07 +0000
+Subject: Make libDiscoverNotifiers private too
+X-Git-Url: http://quickgit.kde.org/?p=discover.git&a=commitdiff&h=6e92f5638ddd0a0ff257d2f425d1bbcbb35eba32
+---
+Make libDiscoverNotifiers private too
+---
+
+
+--- a/libdiscover/backends/DummyBackend/CMakeLists.txt
++++ b/libdiscover/backends/DummyBackend/CMakeLists.txt
+@@ -17,5 +17,6 @@
+ 
+ add_library(DummyNotifier MODULE DummyNotifier.cpp)
+ target_link_libraries(DummyNotifier Discover::Notifiers)
++set_target_properties(DummyNotifier PROPERTIES INSTALL_RPATH ${CMAKE_INSTALL_FULL_LIBDIR}/plasma-discover)
+ 
+ install(TARGETS DummyNotifier DESTINATION ${PLUGIN_INSTALL_DIR}/discover-notifier)
+--- a/libdiscover/backends/PackageKitBackend/CMakeLists.txt
++++ b/libdiscover/backends/PackageKitBackend/CMakeLists.txt
+@@ -17,5 +17,6 @@
+ #notifier
+ add_library(DiscoverPackageKitNotifier MODULE PackageKitNotifier.cpp)
+ target_link_libraries(DiscoverPackageKitNotifier PRIVATE PK::packagekitqt5 Discover::Notifiers)
++set_target_properties(DiscoverPackageKitNotifier PROPERTIES INSTALL_RPATH ${CMAKE_INSTALL_FULL_LIBDIR}/plasma-discover)
+ 
+ install(TARGETS DiscoverPackageKitNotifier DESTINATION ${PLUGIN_INSTALL_DIR}/discover-notifier)
+--- a/libdiscover/notifiers/CMakeLists.txt
++++ b/libdiscover/notifiers/CMakeLists.txt
+@@ -7,7 +7,6 @@
+ generate_export_header(DiscoverNotifiers)
+ 
+ target_include_directories(DiscoverNotifiers PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+-install(TARGETS DiscoverNotifiers ${INSTALL_TARGETS_DEFAULT_ARGS})
++install(TARGETS DiscoverNotifiers DESTINATION ${CMAKE_INSTALL_LIBDIR}/plasma-discover)
+ 
+ add_library(Discover::Notifiers ALIAS DiscoverNotifiers)
+-
+--- a/notifier/CMakeLists.txt
++++ b/notifier/CMakeLists.txt
+@@ -10,6 +10,8 @@
+ 
+     Discover::Notifiers
+ )
++set_target_properties(DiscoverNotifierDeclarativePlugin PROPERTIES INSTALL_RPATH ${CMAKE_INSTALL_FULL_LIBDIR}/plasma-discover)
++
+ install(TARGETS DiscoverNotifierDeclarativePlugin DESTINATION ${KDE_INSTALL_QMLDIR}/org/kde/discovernotifier)
+ install(FILES qmldir DESTINATION ${KDE_INSTALL_QMLDIR}/org/kde/discovernotifier)
+ 

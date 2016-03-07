@@ -1,0 +1,61 @@
+From: Matthias Klumpp <matthias@tenstral.net>
+Date: Mon, 07 Mar 2016 18:20:44 +0000
+Subject: Make libdiscover a private library
+X-Git-Url: http://quickgit.kde.org/?p=discover.git&a=commitdiff&h=645226f28d66986f067b0fc9dc951346163b36a5
+---
+Make libdiscover a private library
+
+This is very useful for distributions, especially Debian, since it
+silences lint warnings about e.g. missing SONAMES and relaxes the
+requirements for this shared library in general.
+It also limits its use to the Discover project only, but that is it's
+intended usecase anyway.
+
+Differential Revision: D1081
+---
+
+
+--- a/discover/CMakeLists.txt
++++ b/discover/CMakeLists.txt
+@@ -16,6 +16,7 @@
+ 
+ add_executable(plasma-discover ${plasma_discover_SRCS})
+ add_executable(Plasma::Discover ALIAS plasma-discover)
++set_target_properties(plasma-discover PROPERTIES INSTALL_RPATH ${CMAKE_INSTALL_FULL_LIBDIR}/plasma-discover)
+ 
+ target_link_libraries(plasma-discover LINK_PUBLIC
+                                      KF5::DBusAddons
+--- a/exporter/CMakeLists.txt
++++ b/exporter/CMakeLists.txt
+@@ -1,6 +1,7 @@
+ include_directories(${CMAKE_SOURCE_DIR} ${CMAKE_BINARY_DIR})
+ 
+ add_executable(plasma-discover-exporter main.cpp MuonExporter.cpp)
++set_target_properties(plasma-discover-exporter PROPERTIES INSTALL_RPATH ${CMAKE_INSTALL_FULL_LIBDIR}/plasma-discover)
+ 
+ target_link_libraries(plasma-discover-exporter Discover::Common KF5::CoreAddons KF5::I18n)
+ 
+--- a/libdiscover/CMakeLists.txt
++++ b/libdiscover/CMakeLists.txt
+@@ -53,5 +53,5 @@
+ 
+ target_include_directories(DiscoverCommon PRIVATE ${PHONON_INCLUDES} PUBLIC ${CMAKE_CURRENT_BINARY_DIR} ${CMAKE_CURRENT_SOURCE_DIR})
+ 
+-install(TARGETS DiscoverCommon ${INSTALL_TARGETS_DEFAULT_ARGS})
++install(TARGETS DiscoverCommon DESTINATION ${CMAKE_INSTALL_LIBDIR}/plasma-discover)
+ install(FILES resources/discoverabstractnotifier.notifyrc DESTINATION ${KNOTIFYRC_INSTALL_DIR})
+--- a/updater/CMakeLists.txt
++++ b/updater/CMakeLists.txt
+@@ -17,6 +17,7 @@
+ )
+ 
+ add_executable(plasma-discover-updater ${plasmadiscover_updater_SRCS})
++set_target_properties(plasma-discover-updater PROPERTIES INSTALL_RPATH ${CMAKE_INSTALL_FULL_LIBDIR}/plasma-discover)
+ 
+ target_link_libraries(plasma-discover-updater KF5::CoreAddons
+                                    KF5::I18n
+@@ -34,4 +35,3 @@
+ 
+ install( FILES plasmadiscoverupdaterui.rc  DESTINATION  ${KXMLGUI_INSTALL_DIR}/plasmadiscoverupdater )
+ install( PROGRAMS plasma-discover-updater.desktop  DESTINATION ${XDG_APPS_INSTALL_DIR} )
+-
