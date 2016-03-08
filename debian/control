@@ -43,7 +43,9 @@ Vcs-Git: git://anonscm.debian.org/pkg-kde/plasma/plasma-discover.git
 
 Package: plasma-discover
 Architecture: any
-Depends: appstream,
+Depends: app-install-data,
+         appstream,
+         apt-xapian-index,
          libdiscovercommon (= ${binary:Version}),
          libqapt3-runtime,
          plasma-discover-common (= ${source:Version}),
