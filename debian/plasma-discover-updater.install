@@ -1,10 +1,10 @@
 #usr/share/locale/*/LC_MESSAGES/plasma-discover-notifier.mo
 #usr/share/locale/*/LC_MESSAGES/plasma-discover-updater.mo
+#usr/share/locale/*/LC_MESSAGES/plasma_applet_org.kde.muonnotifier.mo
 usr/bin/plasma-discover-updater
 usr/share/applications/plasma-discover-updater.desktop
 usr/share/knotifications5/
 usr/share/kservices5/plasma-applet-org.kde.discovernotifier.desktop
 usr/share/kxmlgui5/plasmadiscoverupdater/
-#usr/share/locale/*/LC_MESSAGES/plasma_applet_org.kde.muonnotifier.mo
 usr/share/plasma/plasmoids/org.kde.discovernotifier/
 usr/share/polkit-1/actions/org.kde.muon.repo.policy
