@@ -43,7 +43,9 @@ Vcs-Git: git://anonscm.debian.org/pkg-kde/plasma/plasma-discover.git
 
 Package: plasma-discover
 Architecture: any
-Depends: appstream,
+Depends: app-install-data,
+         appstream,
+         apt-xapian-index,
          libdiscovercommon (= ${binary:Version}),
          libqapt3-runtime,
          plasma-discover-common (= ${source:Version}),
@@ -66,14 +68,14 @@ Depends: libdiscovercommon (= ${binary:Version}),
          libqapt3-runtime,
          ${misc:Depends},
          ${shlibs:Depends}
-Breaks: muon-notifier (<< 4:5.5.3a),
+Breaks: libdiscover,
+        muon-notifier (<< 4:5.5.3a),
         muon-updater (<< 4:5.5.3a),
-        plasma-discover-notifier,
-        libdiscover
-Replaces: muon-notifier (<< 4:5.5.3a),
+        plasma-discover-notifier
+Replaces: libdiscover,
+          muon-notifier (<< 4:5.5.3a),
           muon-updater (<< 4:5.5.3a),
-          plasma-discover-notifier,
-          libdiscover
+          plasma-discover-notifier
 Description: update manager for KDE
  Plasma Discover Updater is a graphical update manager for KDE. It is part of
  the Discover family of software and provides an interface similar to that of
@@ -81,12 +83,9 @@ Description: update manager for KDE
 
 Package: libdiscovercommon
 Architecture: any
-Depends: policykit-1,
-         python3,
-         ${misc:Depends},
-         ${shlibs:Depends}
-Breaks: libmuon (<< 4:5.5.3a), libdiscover
-Replaces: libmuon (<< 4:5.5.3a), libdiscover
+Depends: policykit-1, python3, ${misc:Depends}, ${shlibs:Depends}
+Breaks: libdiscover, libmuon (<< 4:5.5.3a)
+Replaces: libdiscover, libmuon (<< 4:5.5.3a)
 Description: Shared runtime files for the Discover package management suite
  The Discover package management suite is a collection of package management
  applications built on the KDE platform.
@@ -122,8 +121,7 @@ Package: muon-discover
 Architecture: all
 Section: oldlibs
 Priority: extra
-Depends: plasma-discover,
-         ${misc:Depends}
+Depends: plasma-discover, ${misc:Depends}
 Description: Transitional package (muon-discover -> plasma-discover)
  This is a transitional package for plasma-discover and can safely be
  removed.
@@ -132,8 +130,7 @@ Package: muon-updater
 Architecture: all
 Section: oldlibs
 Priority: extra
-Depends: plasma-discover-updater,
-         ${misc:Depends}
+Depends: plasma-discover-updater, ${misc:Depends}
 Description: Transitional package (muon-updater -> plasma-discover-updater)
  This is a transitional package updating muon-updater to plasma-discover-updater
  and can safely be removed.
@@ -142,8 +139,7 @@ Package: muon-notifier
 Architecture: all
 Section: oldlibs
 Priority: extra
-Depends: plasma-discover-updater,
-         ${misc:Depends}
+Depends: plasma-discover-updater, ${misc:Depends}
 Description: Transitional package (muon-notifier -> plasma-discover-updater)
  This is a transitional package updating muon-notifier to
  plasma-discover-updater and can safely be removed.
