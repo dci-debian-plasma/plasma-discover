@@ -1,4 +1,4 @@
-plasma-discover (5.5.95-1~) UNRELEASED; urgency=medium
+plasma-discover (5.5.95-1) experimental; urgency=medium
 
   [ Jonathan Riddell ]
   * Initial package split upstream from Muon.
@@ -9,9 +9,9 @@ plasma-discover (5.5.95-1~) UNRELEASED; urgency=medium
   * Merge update notifier into updater package.
   * Update dependencies to upstream's current requirements.
   * Drop some cruft postinst calls and runtime dependencies.
-  * Override Lintian warnings concerning Discover's private
-    library in /usr/lib.
+  * libdiscover-private.patch: Make libdiscover a private lib
   * Update debian/watch
   * Update Vcs-* URLs
+  * Update debian/copyright
 
- -- Matthias Klumpp <mak@debian.org>  Mon, 11 Jan 2016 22:45:56 +0100
+ -- Matthias Klumpp <mak@debian.org>  Sat, 12 Mar 2016 16:45:56 +0100
