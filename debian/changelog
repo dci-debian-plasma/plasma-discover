@@ -1,3 +1,16 @@
+plasma-discover (5.6.0-1) unstable; urgency=medium
+
+  [ Matthias Klumpp ]
+  * Upload to unstable
+  * New upstream release: 5.6.0
+  * Add gbp.conf
+  * Drop all patches: Applied upstream
+
+  [ Maximiliano Curia ]
+  * uscan no longer supports this kind of watch files.
+
+ -- Matthias Klumpp <mak@debian.org>  Wed, 23 Mar 2016 18:06:56 +0100
+
 plasma-discover (5.5.95-1) experimental; urgency=medium
 
   [ Jonathan Riddell ]
