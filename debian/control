@@ -81,19 +81,19 @@ Depends: policykit-1,
          ${shlibs:Depends}
 Breaks: libmuon (<< 4:5.5.3a)
 Replaces: libmuon (<< 4:5.5.3a)
-Description: Private runtime libraries for the Discover package management suite
- The Discover package management suite is a collection of package management
- applications built on the KDE platform.
+Description: Private runtime libraries for the Discover suite
+ The Discover suite is a collection of software management applications
+ built on the KDE platform.
  .
- This package contains runtime libraries
+ This package contains private runtime libraries
 
 Package: plasma-discover-common
 Architecture: all
 Depends: ${misc:Depends}
 Breaks: muon-common (<< 4:5.5.3a)
 Replaces: muon-common (<< 4:5.5.3a)
-Description: Discover package manager suite (common data files)
- Discover is a graphical package manager for the Plasma workspace.
+Description: Discover software manager suite (common data files)
+ Discover is a graphical software manager for the Plasma workspace.
  .
  This package contains data files shared by various parts of the
  Discover suite.
