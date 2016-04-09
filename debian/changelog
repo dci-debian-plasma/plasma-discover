@@ -1,3 +1,22 @@
+plasma-discover (5.6.2-1~1.gbpbaea7f) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @baea7ff677b6ba93eca02366abebccaf34ce197b **
+
+  [ Matthias Klumpp ]
+  * Improve package descriptions
+  * trivial: fix tiny typo
+
+  [ Maximiliano Curia ]
+  * Add upstream metadata (DEP-12)
+  * Lies, lies
+
+  [ Automatic packaging ]
+  * Update build-deps and deps with the info from cmake
+
+  [ Matthias Klumpp ]
+
+ -- Matthias Klumpp <mak@debian.org>  Sat, 09 Apr 2016 18:19:26 +0200
+
 plasma-discover (5.6.0-1) unstable; urgency=medium
 
   [ Matthias Klumpp ]
