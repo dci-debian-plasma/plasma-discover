@@ -48,7 +48,6 @@ Depends: app-install-data,
          apt-xapian-index,
          libdiscovercommon (= ${binary:Version}),
          libqapt3-runtime,
-         plasma-discover-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
 Breaks: libdiscover,
