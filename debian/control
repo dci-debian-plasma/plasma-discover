@@ -52,15 +52,19 @@ Depends: app-install-data,
          ${misc:Depends},
          ${shlibs:Depends}
 Breaks: libdiscover,
+        muon-common (<< 4:5.5.3a),
         muon-discover (<< 4:5.5.3a),
         muon-notifier (<< 4:5.5.3a),
         muon-updater (<< 4:5.5.3a),
+        plasma-discover-common (<< ${ci:BuildVersion}),
         plasma-discover-notifier,
         plasma-discover-updater (<< ${ci:BuildVersion})
 Replaces: libdiscover,
+          muon-common (<< 4:5.5.3a),
           muon-discover (<< 4:5.5.3a),
           muon-notifier (<< 4:5.5.3a),
           muon-updater (<< 4:5.5.3a),
+          plasma-discover-common (<< ${ci:BuildVersion}),
           plasma-discover-notifier,
           plasma-discover-updater (<< ${ci:BuildVersion})
 Recommends: software-properties-kde
@@ -83,17 +87,6 @@ Description: Shared runtime files for the Discover package management suite
  .
  This package contains runtime libraries
 
-Package: plasma-discover-common
-Architecture: all
-Depends: ${misc:Depends}
-Breaks: muon-common (<< 4:5.5.3a)
-Replaces: muon-common (<< 4:5.5.3a)
-Description: Discover package manager suite (common data files)
- Discover is a graphical package manager for the Plasma workspace.
- .
- This package contains data files shared by various parts of the
- Discover suite.
-
 Package: plasma-discover-dbg
 Section: debug
 Priority: extra
@@ -107,6 +100,15 @@ Description: Discover debugging symbols
  experienced a Discover crash without this package
  installed, please install it, try to reproduce the problem and fill a bug
  report with a new backtrace attached.
+
+Package: plasma-discover-common
+Architecture: all
+Section: oldlibs
+Priority: extra
+Depends: plasma-discover, ${misc:Depends}
+Description: Transitional package (plasma-discover-updater -> plasma-discover)
+ This is a transitional package for plasma-discover and can safely be
+ removed.
 
 Package: plasma-discover-updater
 Architecture: all
