@@ -51,8 +51,18 @@ Depends: app-install-data,
          plasma-discover-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
-Breaks: muon-discover (<< 4:5.5.3a)
-Replaces: muon-discover (<< 4:5.5.3a)
+Breaks: libdiscover,
+        muon-discover (<< 4:5.5.3a),
+        muon-notifier (<< 4:5.5.3a),
+        muon-updater (<< 4:5.5.3a),
+        plasma-discover-notifier,
+        plasma-discover-updater (<< ${ci:BuildVersion})
+Replaces: libdiscover,
+          muon-discover (<< 4:5.5.3a),
+          muon-notifier (<< 4:5.5.3a),
+          muon-updater (<< 4:5.5.3a),
+          plasma-discover-notifier,
+          plasma-discover-updater (<< ${ci:BuildVersion})
 Recommends: software-properties-kde
 Suggests: plasma-discover-updater
 Description: Utility for browsing, installing, and removing applications
@@ -61,25 +71,6 @@ Description: Utility for browsing, installing, and removing applications
  .
  To install or remove software using Discover, you need administrator
  access on the computer.
-
-Package: plasma-discover-updater
-Architecture: any
-Depends: libdiscovercommon (= ${binary:Version}),
-         libqapt3-runtime,
-         ${misc:Depends},
-         ${shlibs:Depends}
-Breaks: libdiscover,
-        muon-notifier (<< 4:5.5.3a),
-        muon-updater (<< 4:5.5.3a),
-        plasma-discover-notifier
-Replaces: libdiscover,
-          muon-notifier (<< 4:5.5.3a),
-          muon-updater (<< 4:5.5.3a),
-          plasma-discover-notifier
-Description: update manager for KDE
- Plasma Discover Updater is a graphical update manager for KDE. It is part of
- the Discover family of software and provides an interface similar to that of
- Discover.
 
 Package: libdiscovercommon
 Architecture: any
@@ -116,6 +107,15 @@ Description: Discover debugging symbols
  experienced a Discover crash without this package
  installed, please install it, try to reproduce the problem and fill a bug
  report with a new backtrace attached.
+
+Package: plasma-discover-updater
+Architecture: all
+Section: oldlibs
+Priority: extra
+Depends: plasma-discover, ${misc:Depends}
+Description: Transitional package (plasma-discover-updater -> plasma-discover)
+ This is a transitional package for plasma-discover and can safely be
+ removed.
 
 Package: muon-discover
 Architecture: all
