@@ -1,7 +1,7 @@
-#usr/share/locale/*/LC_MESSAGES/plasma-discover.mo
 usr/bin/plasma-discover
 usr/lib/*/qt5/qml/org/kde/discovernotifier/libDiscoverNotifierDeclarativePlugin.so
 usr/lib/*/qt5/qml/org/kde/discovernotifier/qmldir
 usr/share/applications/org.kde.discover.desktop
 usr/share/kxmlgui5/plasmadiscover/
+usr/share/locale/*/LC_MESSAGES/plasma-discover.mo
 usr/share/plasmadiscover/
