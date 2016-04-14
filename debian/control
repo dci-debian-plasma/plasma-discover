@@ -50,7 +50,7 @@ Breaks: muon-discover (<< 4:5.5.3a)
 Replaces: muon-discover (<< 4:5.5.3a)
 Recommends: software-properties-kde
 Suggests: plasma-discover-updater
-Description: Utility for browsing, installing, and removing applications
+Description: Utility for browsing, installing and removing software
  Plasma Discover will help you browse through the huge applications library you
  have available and help you find the applications you're looking for.
  .
