@@ -1,3 +1,15 @@
+plasma-discover (5.6.2-1) unstable; urgency=medium
+
+  [ Matthias Klumpp ]
+  * New upstream bugfix release: 5.6.2
+  * Improve package descriptions
+  * Use secure URLs for Vcs-* fields
+
+  [ Maximiliano Curia ]
+  * Add upstream metadata (DEP-12)
+
+ -- Matthias Klumpp <mak@debian.org>  Thu, 14 Apr 2016 16:22:20 +0200
+
 plasma-discover (5.6.0-1) unstable; urgency=medium
 
   [ Matthias Klumpp ]
