@@ -26,9 +26,9 @@ Build-Depends: cmake (>= 2.8.12),
                libkf5solid-dev (>= 5.18.0~),
                libkf5wallet-dev (>= 5.18.0~),
                libkf5widgetsaddons-dev (>= 5.18.0~),
+               libpackagekitqt5-dev,
                libphonon4qt5-dev,
                libphonon4qt5experimental-dev,
-               libqapt-dev (>= 3.0.0),
                libqca-qt5-2-dev,
                libqt5svg5-dev (>= 5.4.0~),
                pkg-config,
@@ -47,7 +47,7 @@ Depends: app-install-data,
          appstream,
          apt-xapian-index,
          libdiscovercommon (= ${binary:Version}),
-         libqapt3-runtime,
+         packagekit,
          plasma-discover-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
@@ -65,7 +65,7 @@ Description: Utility for browsing, installing, and removing applications
 Package: plasma-discover-updater
 Architecture: any
 Depends: libdiscovercommon (= ${binary:Version}),
-         libqapt3-runtime,
+         packagekit,
          ${misc:Depends},
          ${shlibs:Depends}
 Breaks: libdiscover,
@@ -108,7 +108,7 @@ Section: debug
 Priority: extra
 Architecture: any
 Depends: plasma-discover (= ${binary:Version}), ${misc:Depends}
-Recommends: kdelibs5-dbg, qapt-dbg
+Recommends: kdelibs5-dbg
 Description: Discover debugging symbols
  This package contains debugging symbols for Discover.
  When Discover crashes, in most cases this package is
