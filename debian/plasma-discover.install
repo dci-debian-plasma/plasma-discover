@@ -13,4 +13,3 @@ usr/share/locale/*/LC_MESSAGES/plasma-discover.mo
 usr/share/locale/*/LC_MESSAGES/plasma_applet_org.kde.muonnotifier.mo
 usr/share/plasma/plasmoids/org.kde.discovernotifier/
 usr/share/plasmadiscover/
-usr/share/polkit-1/actions/org.kde.muon.repo.policy
