@@ -1,6 +1,6 @@
-plasma-discover (5.6.2-2~1.gbp8cf41d) UNRELEASED; urgency=medium
+plasma-discover (5.6.2-2~2.gbpca12ed) UNRELEASED; urgency=medium
 
-  ** SNAPSHOT build @8cf41d2195b50f7235accd839d650d0d6b38687d **
+  ** SNAPSHOT build @ca12ed5291a3851d2bf6277063bf6fe4b4ced8dd **
 
   [ Automatic packaging ]
   * Update build-deps and deps with the info from cmake
@@ -10,7 +10,10 @@ plasma-discover (5.6.2-2~1.gbp8cf41d) UNRELEASED; urgency=medium
   [ Matthias Klumpp ]
   * trivial: typo
 
- -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Thu, 14 Apr 2016 23:47:18 +0200
+  [ Maximiliano Curia ]
+  * Add missing breaks replaces against libmuon
+
+ -- Maximiliano Curia <maxy@gnuservers.com.ar>  Sun, 17 Apr 2016 19:34:20 +0200
 
 plasma-discover (5.6.2-1) unstable; urgency=medium
 
