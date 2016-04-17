@@ -1,3 +1,17 @@
+plasma-discover (5.6.2-2~1.gbp8cf41d) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @8cf41d2195b50f7235accd839d650d0d6b38687d **
+
+  [ Automatic packaging ]
+  * Update build-deps and deps with the info from cmake
+  * Update changelog for 5.6.2-1~1.gbpbaea7f release
+  * Bump Standards-Version to 3.9.8
+
+  [ Matthias Klumpp ]
+  * trivial: typo
+
+ -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Thu, 14 Apr 2016 23:47:18 +0200
+
 plasma-discover (5.6.2-1) unstable; urgency=medium
 
   [ Matthias Klumpp ]
