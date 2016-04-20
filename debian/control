@@ -6,49 +6,44 @@ Uploaders: Maximiliano Curia <maxy@debian.org>,
            Matthias Klumpp <mak@debian.org>
 Build-Depends: cmake (>= 2.8.12),
                debhelper (>= 9),
-               extra-cmake-modules (>= 5.18.0~),
-               kinit-dev (>= 5.18.0~),
-               kio-dev (>= 5.18.0~),
-               libappstreamqt-dev,
+               extra-cmake-modules (>= 5.16.0~),
+               kio-dev (>= 5.16.0~),
+               libappstreamqt-dev (>= 0.9),
                libdebconf-kde-dev (>= 1.0.0),
-               libkf5attica-dev (>= 5.18.0~),
-               libkf5config-dev (>= 5.18.0~),
-               libkf5configwidgets-dev (>= 5.18.0~),
-               libkf5coreaddons-dev (>= 5.18.0~),
-               libkf5dbusaddons-dev (>= 5.18.0~),
-               libkf5declarative-dev (>= 5.18.0~),
-               libkf5i18n-dev (>= 5.18.0~),
-               libkf5iconthemes-dev (>= 5.18.0~),
-               libkf5itemviews-dev (>= 5.18.0~),
-               libkf5kdelibs4support-dev (>= 5.18.0~),
-               libkf5newstuff-dev (>= 5.18.0~),
-               libkf5notifications-dev (>= 5.18.0~),
-               libkf5solid-dev (>= 5.18.0~),
-               libkf5wallet-dev (>= 5.18.0~),
-               libkf5widgetsaddons-dev (>= 5.18.0~),
-               libphonon4qt5-dev,
-               libphonon4qt5experimental-dev,
+               libkf5attica-dev (>= 5.16.0~),
+               libkf5config-dev (>= 5.16.0~),
+               libkf5configwidgets-dev (>= 5.16.0~),
+               libkf5coreaddons-dev (>= 5.16.0~),
+               libkf5dbusaddons-dev (>= 5.16.0~),
+               libkf5declarative-dev (>= 5.16.0~),
+               libkf5i18n-dev (>= 5.16.0~),
+               libkf5iconthemes-dev (>= 5.16.0~),
+               libkf5itemviews-dev (>= 5.16.0~),
+               libkf5kdelibs4support-dev (>= 5.16.0~),
+               libkf5newstuff-dev (>= 5.16.0~),
+               libkf5notifications-dev (>= 5.16.0~),
+               libkf5solid-dev (>= 5.16.0~),
+               libkf5wallet-dev (>= 5.16.0~),
+               libkf5widgetsaddons-dev (>= 5.16.0~),
                libqapt-dev (>= 3.0.0),
                libqca-qt5-2-dev,
                libqt5svg5-dev (>= 5.4.0~),
                pkg-config,
                pkg-kde-tools (>= 0.15.16),
-               plasma-framework-dev (>= 5.18.0~),
+               plasma-framework-dev (>= 5.16.0~),
                qtbase5-dev (>= 5.4.0~),
                qtdeclarative5-dev (>= 5.4.0~)
 Standards-Version: 3.9.6
 Homepage: https://projects.kde.org/projects/kde/workspace/discover
-Vcs-Browser: http://anonscm.debian.org/cgit/pkg-kde/plasma/plasma-discover.git
-Vcs-Git: git://anonscm.debian.org/pkg-kde/plasma/plasma-discover.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-kde/plasma/plasma-discover.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-kde/plasma/plasma-discover.git
 
 Package: plasma-discover
 Architecture: any
-Depends: app-install-data,
-         appstream,
-         apt-xapian-index,
-         libdiscovercommon (= ${binary:Version}),
+Depends: appstream,
          libqapt3-runtime,
          plasma-discover-common (= ${source:Version}),
+         plasma-discover-private (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
 Breaks: muon-discover (<< 4:5.5.3a)
@@ -64,64 +59,57 @@ Description: Utility for browsing, installing, and removing applications
 
 Package: plasma-discover-updater
 Architecture: any
-Depends: libdiscovercommon (= ${binary:Version}),
-         libqapt3-runtime,
+Depends: libqapt3-runtime,
+         plasma-discover-private (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
-Breaks: libdiscover,
-        muon-notifier (<< 4:5.5.3a),
-        muon-updater (<< 4:5.5.3a),
-        plasma-discover-notifier
-Replaces: libdiscover,
-          muon-notifier (<< 4:5.5.3a),
-          muon-updater (<< 4:5.5.3a),
-          plasma-discover-notifier
-Description: update manager for KDE
+Recommends: plasma-discover-notifier
+Breaks: muon-notifier (<< 4:5.5.3a),
+        muon-updater (<< 4:5.5.3a)
+Replaces: muon-notifier (<< 4:5.5.3a),
+          muon-updater (<< 4:5.5.3a)
+Description: Update manager for KDE
  Plasma Discover Updater is a graphical update manager for KDE. It is part of
  the Discover family of software and provides an interface similar to that of
  Discover.
 
-Package: libdiscovercommon
+Package: plasma-discover-private
 Architecture: any
-Depends: policykit-1, python3, ${misc:Depends}, ${shlibs:Depends}
-Breaks: libdiscover, libmuon (<< 4:5.5.3a)
-Replaces: libdiscover, libmuon (<< 4:5.5.3a)
-Description: Shared runtime files for the Discover package management suite
- The Discover package management suite is a collection of package management
- applications built on the KDE platform.
+Depends: policykit-1,
+         python3,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Breaks: libdiscovercommon (<< 5.6),
+        libmuon (<< 4:5.5.3a)
+Replaces: libdiscovercommon (<< 5.6),
+          libmuon (<< 4:5.5.3a)
+Description: Private runtime libraries for the Discover suite
+ The Discover suite is a collection of software management applications
+ built on the KDE platform.
  .
- This package contains runtime libraries
+ This package contains private runtime libraries
 
 Package: plasma-discover-common
 Architecture: all
 Depends: ${misc:Depends}
-Breaks: muon-common (<< 4:5.5.3a)
-Replaces: muon-common (<< 4:5.5.3a)
-Description: Discover package manager suite (common data files)
- Discover is a graphical package manager for the Plasma workspace.
+Breaks: muon-common (<< 4:5.5.3a),
+        plasma-discover (<< 5.6),
+        plasma-discover-updater (<< 5.6)
+Replaces: muon-common (<< 4:5.5.3a),
+          plasma-discover (<< 5.6),
+          plasma-discover-updater (<< 5.6)
+Description: Discover software manager suite (common data files)
+ Discover is a graphical software manager for the Plasma workspace.
  .
  This package contains data files shared by various parts of the
  Discover suite.
-
-Package: plasma-discover-dbg
-Section: debug
-Priority: extra
-Architecture: any
-Depends: plasma-discover (= ${binary:Version}), ${misc:Depends}
-Recommends: kdelibs5-dbg, qapt-dbg
-Description: Discover debugging symbols
- This package contains debugging symbols for Discover.
- When Discover crashes, in most cases this package is
- needed to get a backtrace that is useful for developers. If you have
- experienced a Discover crash without this package
- installed, please install it, try to reproduce the problem and fill a bug
- report with a new backtrace attached.
 
 Package: muon-discover
 Architecture: all
 Section: oldlibs
 Priority: extra
-Depends: plasma-discover, ${misc:Depends}
+Depends: plasma-discover,
+         ${misc:Depends}
 Description: Transitional package (muon-discover -> plasma-discover)
  This is a transitional package for plasma-discover and can safely be
  removed.
@@ -130,7 +118,8 @@ Package: muon-updater
 Architecture: all
 Section: oldlibs
 Priority: extra
-Depends: plasma-discover-updater, ${misc:Depends}
+Depends: plasma-discover-updater,
+         ${misc:Depends}
 Description: Transitional package (muon-updater -> plasma-discover-updater)
  This is a transitional package updating muon-updater to plasma-discover-updater
  and can safely be removed.
@@ -139,7 +128,8 @@ Package: muon-notifier
 Architecture: all
 Section: oldlibs
 Priority: extra
-Depends: plasma-discover-updater, ${misc:Depends}
+Depends: plasma-discover-updater,
+         ${misc:Depends}
 Description: Transitional package (muon-notifier -> plasma-discover-updater)
  This is a transitional package updating muon-notifier to
  plasma-discover-updater and can safely be removed.

@@ -1,6 +1,3 @@
-#usr/share/locale/*/LC_MESSAGES/plasma-discover-notifier.mo
-#usr/share/locale/*/LC_MESSAGES/plasma-discover-updater.mo
-#usr/share/locale/*/LC_MESSAGES/plasma_applet_org.kde.muonnotifier.mo
 usr/bin/plasma-discover-updater
 usr/share/applications/plasma-discover-updater.desktop
 usr/share/knotifications5/

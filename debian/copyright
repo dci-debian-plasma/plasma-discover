@@ -4,11 +4,11 @@ Upstream-Contact: Aleix Pol Gonzalez <aleixpol@kde.org>
 Source: git://anongit.kde.org/discover
 
 Files: *
-Copyright: 2012-2015, Aleix Pol Gonzalez <aleixpol@blue-systems.com>
-           2010, Guillaume Martres <smarter@ubuntu.com>
+Copyright: 2012-2016, Aleix Pol Gonzalez <aleixpol@blue-systems.com>
            2010-2013, Jonathan Thomas <echidnaman@kubuntu.org>
            2013, Lukas Appelhans <boom1992@chakra-project.org>
-           2013, Lukas Appelhans <l.appelhans@gmx.de>
+License: GPL-2+3+KDEeV
+
 License: GPL-2+3+KDEeV
  This program is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public License as
@@ -31,36 +31,10 @@ License: GPL-2+3+KDEeV
  text of the GNU General Public License version 3 can be found in the file
  `/usr/share/common-licenses/GPL-3'.
 
-Files: discover/*
-       exporter/*
-       libdiscover/resources/StandardBackendUpdater.cpp
-       libdiscover/resources/StandardBackendUpdater.h
-       libdiscover/backends/ApplicationBackend/tests/modeltest.cpp
-       libdiscover/backends/ApplicationBackend/tests/modeltest.h
-       libdiscover/backends/ApplicationBackend/libmuonapt/AddRepositoryHelper.cpp
-       libdiscover/backends/ApplicationBackend/libmuonapt/AddRepositoryHelper.h
-       libdiscover/backends/ApplicationBackend/qoauth/src/qoauth_namespace.h
-       libdiscover/backends/ApplicationBackend/qoauth/src/interface.h
-       libdiscover/backends/ApplicationBackend/qoauth/src/interface_p.h
-       libdiscover/backends/ApplicationBackend/qoauth/src/interface.cpp
-       libdiscover/backends/ApplicationBackend/qoauth/src/qoauth_global.h
-       libdiscover/declarative/DiscoverDeclarativePlugin.cpp
-       libdiscover/declarative/ApplicationProxyModelHelper.h
-       libdiscover/declarative/DiscoverDeclarativePlugin.h
-       libdiscover/declarative/ApplicationProxyModelHelper.cpp
-       notifier/DiscoverNotifierDeclarativePlugin.cpp
-       notifier/DiscoverNotifierDeclarativePlugin.h
-       notifier/plasmoid/Messages.sh
-Copyright: 2012-2015, Aleix Pol Gonzalez <aleixpol@blue-systems.com>
-           2008, Daniel Nicoletti <dantti85-pk@yahoo.com.br>
-           2007, Ivan Cukic <ivan.cukic+kde@gmail.com>
-           2010-2012, Jonathan Thomas <echidnaman@kubuntu.org>
-           2009, Tobias Koenig <tokoe@kde.org>
-           2008, Volker Krause <vkrause@kde.org>
-License: LGPL-2+
+License: LGPL-2.1+
  This program is free software; you can redistribute it and/or modify
- it under the terms of the GNU Library/Lesser General Public License
- version 2, or (at your option) any later version, as published by the
+ it under the terms of the GNU Lesser General Public License
+ version 2.1, or (at your option) any later version, as published by the
  Free Software Foundation
  .
  This program is distributed in the hope that it will be useful,
@@ -68,23 +42,14 @@ License: LGPL-2+
  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  GNU General Public License for more details
  .
- You should have received a copy of the GNU Library/Lesser General Public
+ You should have received a copy of the GNU Lesser General Public
  License along with this program; if not, write to the
  Free Software Foundation, Inc.,
  51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  .
- On Debian systems, the full text of the GNU General Public License version 2
- can be found in the file `/usr/share/common-licenses/GPL-2'.
+ On Debian systems, the full text of the GNU Lesser General Public License
+ version 2.1 can be found in the file `/usr/share/common-licenses/LGPL-2.1`.
 
-Files: cmake/FindAkabeiClient.cmake
-       cmake/FindAkabeiCore.cmake
-       cmake/FindPackageKitQt2.cmake
-       cmake/FindQtOAuth.cmake
-Copyright: 2007, Charles Connell <charles@connells.org> (This was based upon FindKopete.cmake)
-           2010, Harald Sitter <apachelogger@ubuntu.com>
-           2007, Joris Guisson <joris.guisson@gmail.com> (This was based upon FindKTorrent.cmake)
-           2010-2013, Lukas Appelhans <l.appelhans@gmx.de>
-           2010, Mehrdad Momeny <mehrdad.momeny@gmail.com>
 License: BSD-3-clause
  Redistribution and use in source and binary forms, with or without
  modification, are permitted provided that the following conditions
@@ -109,8 +74,109 @@ License: BSD-3-clause
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-Files: libdiscover/backends/ApplicationBackend/tests/modeltest.cpp
-       libdiscover/backends/ApplicationBackend/tests/modeltest.h
+Files: ./libdiscover/*
+ ./notifier/*
+ ./updater/*
+ ./discover/*
+ ./exporter/MuonExporter.cpp
+ ./exporter/MuonExporter.h
+ ./exporter/main.cpp
+ ./libdiscover/*
+ ./notifier/*
+Copyright: 2012-2016, Aleix Pol Gonzalez <aleixpol@blue-systems.com>
+License: GPL-2+3+KDEeV
+
+Files: ./libdiscover/Category/Category.cpp
+ ./libdiscover/Category/Category.h
+ ./libdiscover/ReviewsBackend/Rating.cpp
+ ./libdiscover/ReviewsBackend/Rating.h
+ ./libdiscover/ReviewsBackend/Review.cpp
+ ./libdiscover/ReviewsBackend/Review.h
+ ./libdiscover/Transaction/AddonList.cpp
+ ./libdiscover/Transaction/AddonList.h
+ ./libdiscover/Transaction/Transaction.cpp
+ ./libdiscover/Transaction/Transaction.h
+ ./libdiscover/Transaction/TransactionModel.cpp
+ ./libdiscover/Transaction/TransactionModel.h
+ ./libdiscover/UpdateModel/UpdateItem.cpp
+ ./libdiscover/UpdateModel/UpdateItem.h
+ ./libdiscover/UpdateModel/UpdateModel.cpp
+ ./libdiscover/UpdateModel/UpdateModel.h
+ ./libdiscover/backends/ApplicationBackend/Application.cpp
+ ./libdiscover/backends/ApplicationBackend/Application.h
+ ./libdiscover/backends/ApplicationBackend/ApplicationBackend.cpp
+ ./libdiscover/backends/ApplicationBackend/ApplicationBackend.h
+ ./libdiscover/backends/ApplicationBackend/ReviewsBackend.cpp
+ ./libdiscover/backends/ApplicationBackend/ReviewsBackend.h
+ ./libdiscover/backends/ApplicationBackend/distupgradeevent/releasechecker
+ ./libdiscover/backends/ApplicationBackend/libmuonapt/ChangesDialog.cpp
+ ./libdiscover/backends/ApplicationBackend/libmuonapt/ChangesDialog.h
+ ./libdiscover/backends/ApplicationBackend/libmuonapt/HistoryView/HistoryProxyModel.cpp
+ ./libdiscover/backends/ApplicationBackend/libmuonapt/HistoryView/HistoryProxyModel.h
+ ./libdiscover/backends/ApplicationBackend/libmuonapt/HistoryView/HistoryView.cpp
+ ./libdiscover/backends/ApplicationBackend/libmuonapt/HistoryView/HistoryView.h
+ ./libdiscover/backends/ApplicationBackend/libmuonapt/MuonStrings.cpp
+ ./libdiscover/backends/ApplicationBackend/libmuonapt/MuonStrings.h
+ ./libdiscover/backends/ApplicationBackend/libmuonapt/QAptActions.cpp
+ ./libdiscover/backends/ApplicationBackend/libmuonapt/QAptActions.h
+ ./updater/ChangelogWidget.cpp
+ ./updater/ChangelogWidget.h
+ ./updater/MainWindow.h
+ ./updater/ProgressWidget.cpp
+ ./updater/ProgressWidget.h
+ ./updater/UpdateDelegate.cpp
+ ./updater/UpdateDelegate.h
+ ./updater/UpdaterWidget.cpp
+ ./updater/UpdaterWidget.h
+ ./updater/main.cpp
+Copyright: 2010-2013, Jonathan Thomas <echidnaman@kubuntu.org>
+License: GPL-2+3+KDEeV
+
+Files: ./libdiscover/backends/AkabeiBackend/*
+ ./libdiscover/backends/DummyBackend/DummyNotifier.cpp
+ ./libdiscover/backends/DummyBackend/DummyNotifier.h
+ ./libdiscover/backends/PackageKitBackend/PackageKitNotifier.h
+ ./libdiscover/backends/PackageKitBackend/PackageKitUpdater.cpp
+ ./libdiscover/backends/PackageKitBackend/PackageKitUpdater.h
+ ./libdiscover/backends/AkabeiBackend/AkabeiBackend.cpp
+ ./libdiscover/backends/AkabeiBackend/AkabeiBackend.h
+ ./libdiscover/backends/AkabeiBackend/AkabeiResource.cpp
+ ./libdiscover/backends/AkabeiBackend/AkabeiResource.h
+Copyright: 2013, Lukas Appelhans <boom1992@chakra-project.org>
+License: GPL-2+3+KDEeV
+
+Files: ./libdiscover/backends/AkabeiBackend/AppAkabeiResource.cpp
+ ./libdiscover/backends/AkabeiBackend/AppAkabeiResource.h
+ ./libdiscover/backends/PackageKitBackend/PackageKitBackend.cpp
+ ./libdiscover/backends/PackageKitBackend/PackageKitMessages.cpp
+ ./libdiscover/backends/PackageKitBackend/PackageKitNotifier.cpp
+ ./libdiscover/backends/PackageKitBackend/PackageKitResource.cpp
+Copyright: 2012-2015, Aleix Pol Gonzalez <aleixpol@blue-systems.com>
+  2013, Lukas Appelhans <l.appelhans@gmx.de>
+License: GPL-2+3+KDEeV
+
+Files: ./libdiscover/backends/ApplicationBackend/qoauth/src/interface.cpp
+ ./libdiscover/backends/ApplicationBackend/qoauth/src/interface.h
+ ./libdiscover/backends/ApplicationBackend/qoauth/src/interface_p.h
+ ./libdiscover/backends/ApplicationBackend/qoauth/src/qoauth_global.h
+ ./libdiscover/backends/ApplicationBackend/qoauth/src/qoauth_namespace.h
+Copyright: 2009, Dominik Kapusta <d@ayoy.net>
+License: LGPL-2.1+
+
+Files: ./cmake/FindAkabeiClient.cmake
+ ./cmake/FindAkabeiCore.cmake
+Copyright: 2007, Charles Connell <charles@connells.org> (This was based upon FindKopete.cmake)
+  2007, Joris Guisson <joris.guisson@gmail.com> (This was based upon FindKTorrent.cmake)
+  2010, Lukas Appelhans <l.appelhans@gmx.de>
+License: BSD-3-clause
+
+Files: ./libdiscover/backends/ApplicationBackend/tests/NotifierTest.cpp
+ ./libdiscover/backends/ApplicationBackend/tests/NotifierTest.h
+Copyright: 2015, Harald Sitter <sitter@kde.org>
+License: GPL-2+3+KDEeV
+
+Files: ./libdiscover/backends/ApplicationBackend/tests/modeltest.cpp
+ ./libdiscover/backends/ApplicationBackend/tests/modeltest.h
 Copyright: 2011, Nokia Corporation and/or its subsidiary(-ies)
 License: GPL-3 or LGPL-2.1-QTexception-1.1
  GNU Lesser General Public License Usage
@@ -132,15 +198,15 @@ License: GPL-3 or LGPL-2.1-QTexception-1.1
  file. Please review the following information to ensure the GNU General
  Public License version 3.0 requirements will be met:
  http://www.gnu.org/copyleft/gpl.html.
- .
- Other Usage
- Alternatively, this file may be used in accordance with the terms and
- conditions contained in a signed written agreement between you and Nokia.
- .
- On Debian systems, the full text of the GNU Lesser General Public License
- version 2.1 can be found in the file `/usr/share/common-licenses/LGPL-2.1',
- likewise, the full text of the GNU General Public License version 3
- can be found in the file `/usr/share/common-licenses/GPL-3'.
+
+Files: ./cmake/FindQtOAuth.cmake
+Copyright: 2010, Harald Sitter <apachelogger@ubuntu.com>
+  2010, Mehrdad Momeny <mehrdad.momeny@gmail.com>
+License: BSD-3-clause
+
+Files: ./discover/qml/GridItem.qml
+Copyright: 2014, Aleix Pol Gonzalez <aleixpol@blue-systems.com>
+License: LGPL-2.1+
 
 Files: debian/*
 Copyright: 2010, Jonathan Thomas <echidnaman@kubuntu.org>
