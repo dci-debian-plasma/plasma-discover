@@ -3,11 +3,7 @@
 include /usr/share/pkg-kde-tools/qt-kde-team/3/debian-qt-kde.mk
 
 DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
-
 DEB_VERSION_UPSTREAM_REVISION := $(shell dpkg-parsechangelog | awk '/^Version: / { print $$2 }' | sed -e 's/^[0-9]*://')
-
-override_dh_strip:
-	$(overridden_command) --dbg-package=plasma-discover-dbg
 
 # Do not pull plugins into the shlibs file, it makes lintian angry.
 # This happens because dh_makeshlibs will look for sonames matching
@@ -23,15 +19,6 @@ override_dh_gencontrol:
 	dh_gencontrol -pmuon-updater -- -v4:$(DEB_VERSION_UPSTREAM_REVISION)
 	dh_gencontrol -pmuon-notifier -- -v4:$(DEB_VERSION_UPSTREAM_REVISION)
 	dh_gencontrol --remaining-packages
-
-override_dh_lintian:
-	sed -e "s/@DEB_HOST_MULTIARCH@/$(DEB_HOST_MULTIARCH)/g" \
-		$(CURDIR)/debian/libdiscovercommon.lintian-overrides.in > $(CURDIR)/debian/libdiscovercommon.lintian-overrides
-	dh_lintian
-
-override_dh_clean:
-	rm -f $(CURDIR)/debian/libdiscovercommon.lintian-overrides
-	dh_clean
 
 # FIXME: tests are broken at time
 override_dh_auto_test:

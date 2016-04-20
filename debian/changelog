@@ -1,21 +1,40 @@
-plasma-discover (5.5.5-0ubuntu1) xenial; urgency=medium
+plasma-discover (5.6.2-1ubuntu1) xenial; urgency=medium
 
-  * New upstream bugfix release
+  * Merge with Debian unstable, remaining changes:
+    - Add Breaks/Replaces for libdiscovercommon on plasma-discover-private
+    - Make plasma-discover-common break the plasma-discover(-updater) << 5.6
 
- -- Philip Muškovac <yofel@kubuntu.org>  Thu, 14 Apr 2016 13:49:28 -0700
+ -- Matthias Klumpp <mak@debian.org>  Fri, 15 Apr 2016 19:04:38 +0200
 
-plasma-discover (5.5.4-0ubuntu1) xenial; urgency=medium
+plasma-discover (5.6.2-1) unstable; urgency=medium
+
+  [ Matthias Klumpp ]
+  * New upstream bugfix release: 5.6.2
+  * Improve package descriptions
+  * Use secure URLs for Vcs-* fields
+
+  [ Maximiliano Curia ]
+  * Add upstream metadata (DEP-12)
+
+ -- Matthias Klumpp <mak@debian.org>  Thu, 14 Apr 2016 16:22:20 +0200
+
+plasma-discover (5.6.0-1) unstable; urgency=medium
+
+  [ Matthias Klumpp ]
+  * Upload to unstable
+  * New upstream release: 5.6.0
+  * Add gbp.conf
+  * Drop all patches: Applied upstream
+
+  [ Maximiliano Curia ]
+  * uscan no longer supports this kind of watch files.
+
+ -- Matthias Klumpp <mak@debian.org>  Wed, 23 Mar 2016 18:06:56 +0100
+
+plasma-discover (5.5.95-1) experimental; urgency=medium
 
   [ Jonathan Riddell ]
-  * Initial package split upstream from Muon
-
-  [ Clive Johnston ]
-  * New upstream release
-
-  [ Philip Muškovac ]
-  * Add patches from the Plasma/5.5 branch:
-    - upstream_fix_crash_on_pkglist_refresh.diff
-    - upstream_prevent_misleading_notification.diff
+  * Initial package split upstream from Muon.
 
   [ Matthias Klumpp ]
   * Rename the packages to plasma-discover-*,
@@ -23,9 +42,9 @@ plasma-discover (5.5.4-0ubuntu1) xenial; urgency=medium
   * Merge update notifier into updater package.
   * Update dependencies to upstream's current requirements.
   * Drop some cruft postinst calls and runtime dependencies.
-  * Override Lintian warnings concerning Discover's private
-    library in /usr/lib.
+  * libdiscover-private.patch: Make libdiscover a private lib
   * Update debian/watch
   * Update Vcs-* URLs
+  * Update debian/copyright
 
- -- Clive Johnston <clivejo@aol.com>  Mon, 07 Mar 2016 21:26:27 +0100
+ -- Matthias Klumpp <mak@debian.org>  Sat, 12 Mar 2016 16:45:56 +0100
