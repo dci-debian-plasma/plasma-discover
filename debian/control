@@ -51,8 +51,8 @@ Depends: app-install-data,
          plasma-discover-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
-Breaks: muon-discover (<< 4:5.5.3a)
-Replaces: muon-discover (<< 4:5.5.3a)
+Breaks: muon-discover (<< 4:5.5.3a), plasma-discover-private (<< 4:5.6.3~)
+Replaces: muon-discover (<< 4:5.5.3a), plasma-discover-private (<< 4:5.6.3~)
 Recommends: software-properties-kde
 Suggests: plasma-discover-updater
 Description: Utility for browsing, installing, and removing applications
