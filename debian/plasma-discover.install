@@ -1,6 +1,7 @@
 usr/bin/plasma-discover
 usr/lib/*/qt5/qml/org/kde/discovernotifier/libDiscoverNotifierDeclarativePlugin.so
 usr/lib/*/qt5/qml/org/kde/discovernotifier/qmldir
+usr/share/appdata/org.kde.discover.appdata.xml
 usr/share/applications/org.kde.discover.desktop
 usr/share/icons/hicolor/*/apps/plasmadiscover.*
 usr/share/knotifications5/
@@ -10,6 +11,5 @@ usr/share/locale/*/LC_MESSAGES/plasma-discover-notifier.mo
 usr/share/locale/*/LC_MESSAGES/plasma-discover-updater.mo
 usr/share/locale/*/LC_MESSAGES/plasma-discover.mo
 usr/share/locale/*/LC_MESSAGES/plasma_applet_org.kde.muonnotifier.mo
-usr/share/metainfo/org.kde.discover.appdata.xml
 usr/share/plasma/plasmoids/org.kde.discovernotifier/
 usr/share/plasmadiscover/
