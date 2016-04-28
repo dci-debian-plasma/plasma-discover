@@ -66,6 +66,7 @@ Package: plasma-discover-updater
 Architecture: any
 Depends: libdiscovercommon (= ${binary:Version}),
          packagekit,
+         plasma-discover (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
 Breaks: libdiscover,
