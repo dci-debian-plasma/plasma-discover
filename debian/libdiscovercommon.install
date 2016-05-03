@@ -1,3 +1,4 @@
+etc/xdg/discover_ktexteditor_codesnippets_core.knsrc
 usr/lib/*/plasma-discover/libDiscoverCommon.so
 usr/lib/*/plasma-discover/libDiscoverNotifiers.so
 usr/lib/*/qt5/plugins/discover-notifier/DiscoverPackageKitNotifier.so
