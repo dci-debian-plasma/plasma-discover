@@ -24,18 +24,6 @@ override_dh_gencontrol:
 	dh_gencontrol -pmuon-notifier -- -v4:$(DEB_VERSION_UPSTREAM_REVISION)
 	dh_gencontrol --remaining-packages
 
-override_dh_install:
-	dh_install --list-missing
-
-override_dh_lintian:
-	sed -e "s/@DEB_HOST_MULTIARCH@/$(DEB_HOST_MULTIARCH)/g" \
-		$(CURDIR)/debian/libdiscovercommon.lintian-overrides.in > $(CURDIR)/debian/libdiscovercommon.lintian-overrides
-	dh_lintian
-
-override_dh_clean:
-	rm -f $(CURDIR)/debian/libdiscovercommon.lintian-overrides
-	dh_clean
-
 # FIXME: tests are broken at time
 override_dh_auto_test:
 	:

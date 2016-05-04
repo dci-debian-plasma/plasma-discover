@@ -1,3 +1,0 @@
-libdiscovercommon: shlib-without-versioned-soname usr/lib/@DEB_HOST_MULTIARCH@/libDiscoverNotifiers.so libDiscoverNotifiers.so
-libdiscovercommon: shlib-without-versioned-soname usr/lib/@DEB_HOST_MULTIARCH@/libDiscoverCommon.so libDiscoverCommon.so
-libdiscovercommon: postinst-must-call-ldconfig usr/lib/@DEB_HOST_MULTIARCH@/libDiscoverNotifiers.so
