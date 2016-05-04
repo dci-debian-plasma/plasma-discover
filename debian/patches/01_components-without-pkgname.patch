@@ -1,0 +1,26 @@
+From: Matthias Klumpp <matthias@tenstral.net>
+Date: Fri, 15 Apr 2016 18:38:23 +0000
+Subject: Account for components having no package as installation candidate
+X-Git-Url: http://quickgit.kde.org/?p=discover.git&a=commitdiff&h=683642fb214bfacec23b69dac9f82481337d572a
+---
+Account for components having no package as installation candidate
+
+AppStream components may also be installed via fwupd, a Limba or XdgApp
+bundle, etc.
+This prevents Discover from crashing when encountering such a component.
+---
+
+
+--- a/libdiscover/backends/ApplicationBackend/Application.cpp
++++ b/libdiscover/backends/ApplicationBackend/Application.cpp
+@@ -61,7 +61,8 @@
+     static QByteArray currentDesktop = qgetenv("XDG_CURRENT_DESKTOP");
+ 
+     Q_ASSERT(component.packageNames().count() == 1);
+-    m_packageName = component.packageNames().at(0);
++    if (!component.packageNames().empty())
++        m_packageName = component.packageNames().at(0);
+     
+     m_package = backend->package(packageName());
+     m_isValid = bool(m_package);
+
