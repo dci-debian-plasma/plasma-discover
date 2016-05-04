@@ -25,7 +25,7 @@ Build-Depends: cmake (>= 2.8.12),
                libkf5solid-dev (>= 5.16.0~),
                libkf5wallet-dev (>= 5.16.0~),
                libkf5widgetsaddons-dev (>= 5.16.0~),
-               libqapt-dev (>= 3.0.0),
+               libpackagekitqt5-dev (>= 0.9.5),
                libqca-qt5-2-dev,
                libqt5svg5-dev (>= 5.4.0~),
                pkg-config,
@@ -41,7 +41,7 @@ Vcs-Git: https://anonscm.debian.org/git/pkg-kde/plasma/plasma-discover.git
 Package: plasma-discover
 Architecture: any
 Depends: appstream,
-         libqapt3-runtime,
+         packagekit,
          plasma-discover-common (= ${source:Version}),
          plasma-discover-private (= ${binary:Version}),
          ${misc:Depends},
@@ -59,7 +59,7 @@ Description: Utility for browsing, installing and removing software
 
 Package: plasma-discover-updater
 Architecture: any
-Depends: libqapt3-runtime,
+Depends: packagekit,
          plasma-discover-private (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
