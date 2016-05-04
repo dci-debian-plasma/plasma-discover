@@ -4,13 +4,32 @@ plasma-discover (5.6.3-0neon) xenial; urgency=medium
 
  -- Neon CI <neon@kde.org>  Tue, 19 Apr 2016 16:55:40 +0000
 
-plasma-discover (5.6.2-0neon) xenial; urgency=medium
+plasma-discover (5.6.2-1) unstable; urgency=medium
 
-  * New release
+  [ Matthias Klumpp ]
+  * New upstream bugfix release: 5.6.2
+  * Improve package descriptions
+  * Use secure URLs for Vcs-* fields
 
- -- Neon CI <neon@kde.org>  Mon, 11 Apr 2016 13:42:59 +0000
+  [ Maximiliano Curia ]
+  * Add upstream metadata (DEP-12)
 
-plasma-discover (5.5.3a-0ubuntu1) UNRELEASED; urgency=medium
+ -- Matthias Klumpp <mak@debian.org>  Thu, 14 Apr 2016 16:22:20 +0200
+
+plasma-discover (5.6.0-1) unstable; urgency=medium
+
+  [ Matthias Klumpp ]
+  * Upload to unstable
+  * New upstream release: 5.6.0
+  * Add gbp.conf
+  * Drop all patches: Applied upstream
+
+  [ Maximiliano Curia ]
+  * uscan no longer supports this kind of watch files.
+
+ -- Matthias Klumpp <mak@debian.org>  Wed, 23 Mar 2016 18:06:56 +0100
+
+plasma-discover (5.5.95-1) experimental; urgency=medium
 
   [ Jonathan Riddell ]
   * Initial package split upstream from Muon
@@ -30,9 +49,9 @@ plasma-discover (5.5.3a-0ubuntu1) UNRELEASED; urgency=medium
   * Merge update notifier into updater package.
   * Update dependencies to upstream's current requirements.
   * Drop some cruft postinst calls and runtime dependencies.
-  * Override Lintian warnings concerning Discover's private
-    library in /usr/lib.
+  * libdiscover-private.patch: Make libdiscover a private lib
   * Update debian/watch
   * Update Vcs-* URLs
+  * Update debian/copyright
 
- -- Clive Johnston <clivejo@aol.com>  Thu, 07 Jan 2016 17:58:43 +0000
+ -- Matthias Klumpp <mak@debian.org>  Sat, 12 Mar 2016 16:45:56 +0100

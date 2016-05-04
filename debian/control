@@ -38,15 +38,16 @@ Build-Depends: cmake (>= 2.8.12),
                qtdeclarative5-dev (>= 5.4.0~)
 Standards-Version: 3.9.6
 Homepage: https://projects.kde.org/projects/kde/workspace/discover
-Vcs-Browser: http://anonscm.debian.org/cgit/pkg-kde/plasma/plasma-discover.git
-Vcs-Git: git://anonscm.debian.org/pkg-kde/plasma/plasma-discover.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-kde/plasma/plasma-discover.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-kde/plasma/plasma-discover.git
 
 Package: plasma-discover
 Architecture: any
 Depends: appstream,
          apt-xapian-index,
-         libdiscovercommon (= ${binary:Version}),
          packagekit,
+         plasma-discover-common (= ${source:Version}),
+         plasma-discover-private (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
 Breaks: libdiscover,
@@ -69,55 +70,55 @@ Replaces: libdiscover,
           plasma-discover-updater (<< ${ci:BuildVersion})
 Recommends: software-properties-kde
 Suggests: plasma-discover-updater
-Description: Utility for browsing, installing, and removing applications
+Description: Utility for browsing, installing and removing software
  Plasma Discover will help you browse through the huge applications library you
  have available and help you find the applications you're looking for.
  .
  To install or remove software using Discover, you need administrator
  access on the computer.
 
-Package: libdiscovercommon
+Package: plasma-discover-updater
 Architecture: any
-Depends: policykit-1, python3, ${misc:Depends}, ${shlibs:Depends}
-Breaks: libdiscover, libmuon (<< 4:5.5.3a)
-Replaces: libdiscover, libmuon (<< 4:5.5.3a)
-Description: Shared runtime files for the Discover package management suite
- The Discover package management suite is a collection of package management
- applications built on the KDE platform.
- .
- This package contains runtime libraries
+Depends: libqapt3-runtime,
+         plasma-discover-private (= ${binary:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends}
+Recommends: plasma-discover-notifier
+Breaks: libmuon (<< 4:5.6),
+        muon-notifier (<< 4:5.5.3a),
+        muon-updater (<< 4:5.5.3a)
+Replaces: libmuon (<< 4:5.6),
+          muon-notifier (<< 4:5.5.3a),
+          muon-updater (<< 4:5.5.3a)
+Description: Update manager for KDE
+ Plasma Discover Updater is a graphical update manager for KDE. It is part of
+ the Discover family of software and provides an interface similar to that of
+ Discover.
 
-Package: plasma-discover-dbg
-Section: debug
-Priority: extra
+Package: plasma-discover-private
 Architecture: any
-Depends: plasma-discover (= ${binary:Version}), ${misc:Depends}
-Recommends: kdelibs5-dbg
-Description: Discover debugging symbols
- This package contains debugging symbols for Discover.
- When Discover crashes, in most cases this package is
- needed to get a backtrace that is useful for developers. If you have
- experienced a Discover crash without this package
- installed, please install it, try to reproduce the problem and fill a bug
- report with a new backtrace attached.
+Depends: policykit-1,
+         python3,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Breaks: libmuon (<< 4:5.6), libdiscovercommon (<< 5.6.3+p16.04+git20160419.1745-0)
+Replaces: libmuon (<< 4:5.6), libdiscovercommon (<< 5.6.3+p16.04+git20160419.1745-0)
+Description: Private runtime libraries for the Discover suite
+ The Discover suite is a collection of software management applications
+ built on the KDE platform.
+ .
+ This package contains private runtime libraries
 
 Package: plasma-discover-common
 Architecture: all
-Section: oldlibs
-Priority: extra
-Depends: plasma-discover, ${misc:Depends}
-Description: Transitional package (plasma-discover-updater -> plasma-discover)
- This is a transitional package for plasma-discover and can safely be
- removed.
-
-Package: plasma-discover-updater
-Architecture: all
-Section: oldlibs
-Priority: extra
-Depends: plasma-discover, ${misc:Depends}
-Description: Transitional package (plasma-discover-updater -> plasma-discover)
- This is a transitional package for plasma-discover and can safely be
- removed.
+Depends: ${misc:Depends}
+Breaks: muon-common (<< 4:5.5.3a), plasma-discover-updater (<< 5.6.3-0neon+16.04+build10), plasma-discover (<< 5.6.3-0neon+16.04+build10)
+Replaces: muon-common (<< 4:5.5.3a), plasma-discover-updater (<< 5.6.3-0neon+16.04+build10), plasma-discover (<< 5.6.3-0neon+16.04+build10)
+Description: Discover software manager suite (common data files)
+ Discover is a graphical software manager for the Plasma workspace.
+ .
+ This package contains data files shared by various parts of the
+ Discover suite.
 
 Package: muon-discover
 Architecture: all
