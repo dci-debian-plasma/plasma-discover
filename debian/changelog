@@ -1,12 +1,13 @@
-plasma-discover (5.6.3-1~3.gbp214620) UNRELEASED; urgency=medium
+plasma-discover (5.6.3-1~4.gbp07e2e8) UNRELEASED; urgency=medium
 
-  ** SNAPSHOT build @2146202bf0c1ab8b40d4da1cfa2e639f4888ea28 **
+  ** SNAPSHOT build @07e2e881eff22b7583486f53cb5c701aec1f9d47 **
 
   [ Automatic packaging ]
   * Update build-deps and deps with the info from cmake
   * Update changelog for 5.6.2-1~1.gbpbaea7f release
   * Bump Standards-Version to 3.9.8
   * Update build-deps and deps with the info from cmake
+  * Drop upstream applied patch: 01_components-without-pkgname.patch
 
   [ Matthias Klumpp ]
   * trivial: typo
@@ -18,7 +19,7 @@ plasma-discover (5.6.3-1~3.gbp214620) UNRELEASED; urgency=medium
   * Add missing breaks replaces against libmuon
   * debian/control: Update Vcs-Browser and Vcs-Git fields
 
- -- Matthias Klumpp <mak@debian.org>  Wed, 04 May 2016 21:45:20 +0200
+ -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Wed, 04 May 2016 21:55:33 +0200
 
 plasma-discover (5.6.2-1) unstable; urgency=medium
 
