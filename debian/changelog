@@ -4,9 +4,7 @@ plasma-discover (5.6.3-1~4.gbp07e2e8) UNRELEASED; urgency=medium
 
   [ Automatic packaging ]
   * Update build-deps and deps with the info from cmake
-  * Update changelog for 5.6.2-1~1.gbpbaea7f release
   * Bump Standards-Version to 3.9.8
-  * Update build-deps and deps with the info from cmake
   * Drop upstream applied patch: 01_components-without-pkgname.patch
 
   [ Matthias Klumpp ]
