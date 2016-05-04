@@ -84,8 +84,8 @@ Depends: policykit-1,
          python3,
          ${misc:Depends},
          ${shlibs:Depends}
-Breaks: libmuon (<< 4:5.6)
-Replaces: libmuon (<< 4:5.6)
+Breaks: libmuon (<< 4:5.6), libdiscovercommon (<< 5.6.3+p16.04+git20160419.1745-0)
+Replaces: libmuon (<< 4:5.6), libdiscovercommon (<< 5.6.3+p16.04+git20160419.1745-0)
 Description: Private runtime libraries for the Discover suite
  The Discover suite is a collection of software management applications
  built on the KDE platform.
