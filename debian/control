@@ -95,27 +95,13 @@ Description: Private runtime libraries for the Discover suite
 Package: plasma-discover-common
 Architecture: all
 Depends: ${misc:Depends}
-Breaks: muon-common (<< 4:5.5.3a)
-Replaces: muon-common (<< 4:5.5.3a)
+Breaks: muon-common (<< 4:5.5.3a), plasma-discover-updater (<< 5.6.3-0neon+16.04+build10), plasma-discover (<< 5.6.3-0neon+16.04+build10)
+Replaces: muon-common (<< 4:5.5.3a), plasma-discover-updater (<< 5.6.3-0neon+16.04+build10), plasma-discover (<< 5.6.3-0neon+16.04+build10)
 Description: Discover software manager suite (common data files)
  Discover is a graphical software manager for the Plasma workspace.
  .
  This package contains data files shared by various parts of the
  Discover suite.
-
-Package: plasma-discover-dbg
-Section: debug
-Priority: extra
-Architecture: any
-Depends: plasma-discover (= ${binary:Version}), ${misc:Depends}
-Recommends: kdelibs5-dbg
-Description: Discover debugging symbols
- This package contains debugging symbols for Discover.
- When Discover crashes, in most cases this package is
- needed to get a backtrace that is useful for developers. If you have
- experienced a Discover crash without this package
- installed, please install it, try to reproduce the problem and fill a bug
- report with a new backtrace attached.
 
 Package: muon-discover
 Architecture: all
