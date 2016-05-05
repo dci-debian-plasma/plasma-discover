@@ -57,7 +57,7 @@ Breaks: libdiscover,
         muon-updater (<< 4:5.5.3a),
         plasma-discover-common (<< ${ci:BuildVersion}),
         plasma-discover-notifier,
-        plasma-discover-private (<< 4:5.6.3~),
+        plasma-discover-private (<< 5.6.3~),
         plasma-discover-updater (<< ${ci:BuildVersion})
 Replaces: libdiscover,
           muon-common (<< 4:5.5.3a),
@@ -66,7 +66,7 @@ Replaces: libdiscover,
           muon-updater (<< 4:5.5.3a),
           plasma-discover-common (<< ${ci:BuildVersion}),
           plasma-discover-notifier,
-          plasma-discover-private (<< 4:5.6.3~),
+          plasma-discover-private (<< 5.6.3~),
           plasma-discover-updater (<< ${ci:BuildVersion})
 Recommends: software-properties-kde
 Suggests: plasma-discover-updater
