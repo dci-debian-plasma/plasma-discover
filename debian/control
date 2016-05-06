@@ -51,7 +51,6 @@ Depends: appstream,
          ${shlibs:Depends}
 Breaks: muon-discover (<< 4:5.5.3a), plasma-discover-private (<< 5.6.3~)
 Replaces: muon-discover (<< 4:5.5.3a), plasma-discover-private (<< 5.6.3~)
-Recommends: software-properties-kde
 Suggests: plasma-discover-updater
 Description: Utility for browsing, installing and removing software
  Plasma Discover will help you browse through the huge applications library you
