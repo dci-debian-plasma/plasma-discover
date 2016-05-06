@@ -4,6 +4,5 @@ usr/lib/*/qt5/qml/org/kde/discovernotifier/qmldir
 usr/share/appdata/org.kde.discover.appdata.xml
 usr/share/applications/org.kde.discover.desktop
 usr/share/knotifications5/
-usr/share/kservices5/plasma-applet-org.kde.discovernotifier.desktop
 usr/share/kxmlgui5/plasmadiscover/
 usr/share/plasmadiscover/
