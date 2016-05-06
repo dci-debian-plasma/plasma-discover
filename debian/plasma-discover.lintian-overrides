@@ -1,1 +1,2 @@
 plasma-discover: binary-without-manpage usr/bin/muon-discover
+plasma-discover source: version-substvar-for-external-package plasma-discover-private -> libdiscovercommon
