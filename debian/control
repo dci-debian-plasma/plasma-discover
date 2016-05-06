@@ -80,8 +80,8 @@ Description: Update manager for KDE
 Package: plasma-discover-private
 Architecture: any
 Depends: policykit-1, python3, ${misc:Depends}, ${shlibs:Depends}
-Breaks: libdiscovercommon (<< 5.6.3-0neon+16.04+build10), libmuon (<< 4:5.6)
-Replaces: libdiscovercommon (<< 5.6.3-0neon+16.04+build10), libmuon (<< 4:5.6)
+Breaks: libdiscovercommon (<< ${binary:Version}~ciBuild), libmuon (<< 4:5.6)
+Replaces: libdiscovercommon (<< ${binary:Version}~ciBuild), libmuon (<< 4:5.6)
 Description: Private runtime libraries for the Discover suite
  The Discover suite is a collection of software management applications
  built on the KDE platform.
@@ -92,11 +92,11 @@ Package: plasma-discover-common
 Architecture: all
 Depends: ${misc:Depends}
 Breaks: muon-common (<< 4:5.5.3a),
-        plasma-discover (<< 5.6.3-0neon+16.04+build10),
-        plasma-discover-updater (<< 5.6.3-0neon+16.04+build10)
+        plasma-discover (<< ${binary:Version}~ciBuild),
+        plasma-discover-updater (<< ${binary:Version}~ciBuild)
 Replaces: muon-common (<< 4:5.5.3a),
-          plasma-discover (<< 5.6.3-0neon+16.04+build10),
-          plasma-discover-updater (<< 5.6.3-0neon+16.04+build10)
+          plasma-discover (<< ${binary:Version}~ciBuild),
+          plasma-discover-updater (<< ${binary:Version}~ciBuild)
 Description: Discover software manager suite (common data files)
  Discover is a graphical software manager for the Plasma workspace.
  .
