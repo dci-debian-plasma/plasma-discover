@@ -68,7 +68,6 @@ Replaces: libdiscover,
           plasma-discover-notifier,
           plasma-discover-private (<< 5.6.3~),
           plasma-discover-updater (<< ${ci:BuildVersion})
-Recommends: software-properties-kde
 Suggests: plasma-discover-updater
 Description: Utility for browsing, installing and removing software
  Plasma Discover will help you browse through the huge applications library you
