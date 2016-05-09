@@ -110,10 +110,12 @@ Description: Private runtime libraries for the Discover suite
 Package: plasma-discover-common
 Architecture: all
 Depends: ${misc:Depends}
-Breaks: muon-common (<< 4:5.5.3a),
+Breaks: libdiscovercommon (<< ${binary:Version}~ciBuild),
+        muon-common (<< 4:5.5.3a),
         plasma-discover (<< ${binary:Version}~ciBuild),
         plasma-discover-updater (<< ${binary:Version}~ciBuild)
-Replaces: muon-common (<< 4:5.5.3a),
+Replaces: libdiscovercommon (<< ${binary:Version}~ciBuild),
+          muon-common (<< 4:5.5.3a),
           plasma-discover (<< ${binary:Version}~ciBuild),
           plasma-discover-updater (<< ${binary:Version}~ciBuild)
 Description: Discover software manager suite (common data files)
