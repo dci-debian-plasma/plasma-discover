@@ -1,6 +1,4 @@
-plasma-discover (5.6.3-1~4.gbp07e2e8) UNRELEASED; urgency=medium
-
-  ** SNAPSHOT build @07e2e881eff22b7583486f53cb5c701aec1f9d47 **
+plasma-discover (5.6.4-1) unstable; urgency=medium
 
   [ Automatic packaging ]
   * Update build-deps and deps with the info from cmake
@@ -8,16 +6,17 @@ plasma-discover (5.6.3-1~4.gbp07e2e8) UNRELEASED; urgency=medium
   * Drop upstream applied patch: 01_components-without-pkgname.patch
 
   [ Matthias Klumpp ]
-  * trivial: typo
   * Use versioned breaks against libmuon
   * Use PackageKit backend by default
-  * components-without-pkgname.patch: Don't crash if AppStream components without pkgname are present
+  * Drop unneeded build dependencies
+  * only-fetch-needed-pkgs.patch: Only fetch package information that we
+    require. This should speed up loading the application.
 
   [ Maximiliano Curia ]
   * Add missing breaks replaces against libmuon
   * debian/control: Update Vcs-Browser and Vcs-Git fields
 
- -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Wed, 04 May 2016 21:55:33 +0200
+ -- Matthias Klumpp <mak@debian.org>  Wed, 11 May 2016 22:02:48 +0200
 
 plasma-discover (5.6.2-1) unstable; urgency=medium
 
