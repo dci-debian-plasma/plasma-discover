@@ -10,6 +10,7 @@ Build-Depends: cmake (>= 2.8.12),
                kio-dev (>= 5.16.0~),
                libappstreamqt-dev (>= 0.9.2~),
                libdebconf-kde-dev (>= 1.0.0),
+               libkf5archive-dev,
                libkf5attica-dev (>= 5.16.0~),
                libkf5config-dev (>= 5.16.0~),
                libkf5configwidgets-dev (>= 5.16.0~),
@@ -79,9 +80,7 @@ Description: Update manager for KDE
 
 Package: plasma-discover-private
 Architecture: any
-Depends: policykit-1,
-         ${misc:Depends},
-         ${shlibs:Depends}
+Depends: policykit-1, ${misc:Depends}, ${shlibs:Depends}
 Breaks: libmuon (<< 4:5.6)
 Replaces: libmuon (<< 4:5.6)
 Description: Private runtime libraries for the Discover suite
@@ -105,8 +104,7 @@ Package: muon-discover
 Architecture: all
 Section: oldlibs
 Priority: extra
-Depends: plasma-discover,
-         ${misc:Depends}
+Depends: plasma-discover, ${misc:Depends}
 Description: Transitional package (muon-discover -> plasma-discover)
  This is a transitional package for plasma-discover and can safely be
  removed.
@@ -115,8 +113,7 @@ Package: muon-updater
 Architecture: all
 Section: oldlibs
 Priority: extra
-Depends: plasma-discover-updater,
-         ${misc:Depends}
+Depends: plasma-discover-updater, ${misc:Depends}
 Description: Transitional package (muon-updater -> plasma-discover-updater)
  This is a transitional package updating muon-updater to plasma-discover-updater
  and can safely be removed.
@@ -125,8 +122,7 @@ Package: muon-notifier
 Architecture: all
 Section: oldlibs
 Priority: extra
-Depends: plasma-discover-updater,
-         ${misc:Depends}
+Depends: plasma-discover-updater, ${misc:Depends}
 Description: Transitional package (muon-notifier -> plasma-discover-updater)
  This is a transitional package updating muon-notifier to
  plasma-discover-updater and can safely be removed.
