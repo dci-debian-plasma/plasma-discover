@@ -1,3 +1,14 @@
+plasma-discover (5.6.4-2~1.gbp79779c) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @79779c8624a6ca1389b7df1e758379ceb84e5411 **
+
+  * Update changelog for 5.6.3-1~5.gbp7f2a02 release
+  * Update build-deps and deps with the info from cmake
+  * Update changelog for 5.6.4-1~1.gbp351ac9 release
+  * Update build-deps and deps with the info from cmake
+
+ -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Thu, 12 May 2016 08:07:32 +0200
+
 plasma-discover (5.6.4-1) unstable; urgency=medium
 
   [ Automatic packaging ]
