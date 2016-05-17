@@ -44,7 +44,6 @@ Vcs-Git: https://anonscm.debian.org/git/pkg-kde/plasma/plasma-discover.git
 Package: plasma-discover
 Architecture: any
 Depends: appstream,
-         apt-xapian-index,
          packagekit,
          plasma-discover-common (= ${source:Version}),
          plasma-discover-private (= ${binary:Version}),
@@ -78,7 +77,7 @@ Description: Utility for browsing, installing and removing software
 
 Package: plasma-discover-updater
 Architecture: any
-Depends: libqapt3-runtime,
+Depends: packagekit,
          plasma-discover-private (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
