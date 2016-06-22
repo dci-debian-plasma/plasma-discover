@@ -1,14 +1,9 @@
-plasma-discover (5.6.5-1~1.gbpa9fc4d) UNRELEASED; urgency=medium
+plasma-discover (5.6.5-1) unstable; urgency=medium
 
-  ** SNAPSHOT build @a9fc4da85887313ef1f03aefe0ced9085b945422 **
-
-  * Update changelog for 5.6.3-1~5.gbp7f2a02 release
-  * Update build-deps and deps with the info from cmake
-  * Update changelog for 5.6.4-1~1.gbp351ac9 release
-  * Update build-deps and deps with the info from cmake
+  [ Automatic packaging ]
   * Refresh patches
 
- -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Tue, 14 Jun 2016 19:39:16 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 22 Jun 2016 21:44:37 +0200
 
 plasma-discover (5.6.4-1) unstable; urgency=medium
 
