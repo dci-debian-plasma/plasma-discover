@@ -1,3 +1,11 @@
+plasma-discover (5.6.5-2~1.gbp71d1e5) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @71d1e5b8079a829102716f8456ddc82e77ae4ccf **
+
+  * Drop obsolete recommends
+
+ -- Matthias Klumpp <matthias@tenstral.net>  Fri, 01 Jul 2016 10:39:14 +0200
+
 plasma-discover (5.6.5-1) unstable; urgency=medium
 
   [ Automatic packaging ]
