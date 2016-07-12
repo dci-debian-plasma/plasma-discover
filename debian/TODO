@@ -1,6 +1,0 @@
-- libdiscover package name clashes with the discover (hardware identification
-  system) namespace.
-  From the install file the libs lack soversion, and could at least be further splitted in
-  discover-common discover-notifiers muon-apt qml-module-org-kde-discover
-  muon-repo
-  Do these libs even need to be in their own packages?
