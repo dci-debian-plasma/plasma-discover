@@ -1,3 +1,16 @@
+plasma-discover (5.7.0-2) unstable; urgency=medium
+
+  * Adjust packaging for the 5.7 release
+    - Drop plasma-discover-updater, no longer needed
+    - Merge plasma-discover-private into main package,
+      it is no longer necessary to have this split.
+    - Install new files
+    - Write better package description
+  * Refresh debian/copyright
+  * Drop the TODO file, all items have been addressed
+
+ -- Matthias Klumpp <mak@debian.org>  Tue, 12 Jul 2016 15:48:48 +0200
+
 plasma-discover (5.7.0-1) unstable; urgency=medium
 
   [ Matthias Klumpp ]
