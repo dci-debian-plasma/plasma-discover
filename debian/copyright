@@ -76,7 +76,6 @@ License: BSD-3-clause
 
 Files: ./libdiscover/*
  ./notifier/*
- ./updater/*
  ./discover/*
  ./exporter/MuonExporter.cpp
  ./exporter/MuonExporter.h
@@ -119,35 +118,18 @@ Files: ./libdiscover/Category/Category.cpp
  ./libdiscover/backends/ApplicationBackend/libmuonapt/MuonStrings.h
  ./libdiscover/backends/ApplicationBackend/libmuonapt/QAptActions.cpp
  ./libdiscover/backends/ApplicationBackend/libmuonapt/QAptActions.h
- ./updater/ChangelogWidget.cpp
- ./updater/ChangelogWidget.h
- ./updater/MainWindow.h
- ./updater/ProgressWidget.cpp
- ./updater/ProgressWidget.h
- ./updater/UpdateDelegate.cpp
- ./updater/UpdateDelegate.h
- ./updater/UpdaterWidget.cpp
- ./updater/UpdaterWidget.h
- ./updater/main.cpp
 Copyright: 2010-2013, Jonathan Thomas <echidnaman@kubuntu.org>
 License: GPL-2+3+KDEeV
 
-Files: ./libdiscover/backends/AkabeiBackend/*
- ./libdiscover/backends/DummyBackend/DummyNotifier.cpp
+Files: ./libdiscover/backends/DummyBackend/DummyNotifier.cpp
  ./libdiscover/backends/DummyBackend/DummyNotifier.h
  ./libdiscover/backends/PackageKitBackend/PackageKitNotifier.h
  ./libdiscover/backends/PackageKitBackend/PackageKitUpdater.cpp
  ./libdiscover/backends/PackageKitBackend/PackageKitUpdater.h
- ./libdiscover/backends/AkabeiBackend/AkabeiBackend.cpp
- ./libdiscover/backends/AkabeiBackend/AkabeiBackend.h
- ./libdiscover/backends/AkabeiBackend/AkabeiResource.cpp
- ./libdiscover/backends/AkabeiBackend/AkabeiResource.h
 Copyright: 2013, Lukas Appelhans <boom1992@chakra-project.org>
 License: GPL-2+3+KDEeV
 
-Files: ./libdiscover/backends/AkabeiBackend/AppAkabeiResource.cpp
- ./libdiscover/backends/AkabeiBackend/AppAkabeiResource.h
- ./libdiscover/backends/PackageKitBackend/PackageKitBackend.cpp
+Files: ./libdiscover/backends/PackageKitBackend/PackageKitBackend.cpp
  ./libdiscover/backends/PackageKitBackend/PackageKitMessages.cpp
  ./libdiscover/backends/PackageKitBackend/PackageKitNotifier.cpp
  ./libdiscover/backends/PackageKitBackend/PackageKitResource.cpp
@@ -163,41 +145,10 @@ Files: ./libdiscover/backends/ApplicationBackend/qoauth/src/interface.cpp
 Copyright: 2009, Dominik Kapusta <d@ayoy.net>
 License: LGPL-2.1+
 
-Files: ./cmake/FindAkabeiClient.cmake
- ./cmake/FindAkabeiCore.cmake
-Copyright: 2007, Charles Connell <charles@connells.org> (This was based upon FindKopete.cmake)
-  2007, Joris Guisson <joris.guisson@gmail.com> (This was based upon FindKTorrent.cmake)
-  2010, Lukas Appelhans <l.appelhans@gmx.de>
-License: BSD-3-clause
-
 Files: ./libdiscover/backends/ApplicationBackend/tests/NotifierTest.cpp
  ./libdiscover/backends/ApplicationBackend/tests/NotifierTest.h
 Copyright: 2015, Harald Sitter <sitter@kde.org>
 License: GPL-2+3+KDEeV
-
-Files: ./libdiscover/backends/ApplicationBackend/tests/modeltest.cpp
- ./libdiscover/backends/ApplicationBackend/tests/modeltest.h
-Copyright: 2011, Nokia Corporation and/or its subsidiary(-ies)
-License: GPL-3 or LGPL-2.1-QTexception-1.1
- GNU Lesser General Public License Usage
- This file may be used under the terms of the GNU Lesser General Public
- License version 2.1 as published by the Free Software Foundation and
- appearing in the file LICENSE.LGPL included in the packaging of this
- file. Please review the following information to ensure the GNU Lesser
- General Public License version 2.1 requirements will be met:
- http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html.
- .
- In addition, as a special exception, Nokia gives you certain additional
- rights. These rights are described in the Nokia Qt LGPL Exception
- version 1.1, included in the file LGPL_EXCEPTION.txt in this package.
- .
- GNU General Public License Usage
- Alternatively, this file may be used under the terms of the GNU General
- Public License version 3.0 as published by the Free Software Foundation
- and appearing in the file LICENSE.GPL included in the packaging of this
- file. Please review the following information to ensure the GNU General
- Public License version 3.0 requirements will be met:
- http://www.gnu.org/copyleft/gpl.html.
 
 Files: ./cmake/FindQtOAuth.cmake
 Copyright: 2010, Harald Sitter <apachelogger@ubuntu.com>
