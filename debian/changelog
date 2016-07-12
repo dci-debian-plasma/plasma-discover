@@ -1,16 +1,12 @@
-plasma-discover (5.7.0-1~1.gbpd0986d) UNRELEASED; urgency=medium
-
-  ** SNAPSHOT build @d0986de29713a0477e9760160bdd1b805b0446c9 **
+plasma-discover (5.7.0-1) unstable; urgency=medium
 
   [ Matthias Klumpp ]
-  ** SNAPSHOT build @71d1e5b8079a829102716f8456ddc82e77ae4ccf **
-
   * Drop obsolete recommends
 
   [ Automatic packaging ]
   * Update build-deps and deps with the info from cmake
 
- -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Tue, 05 Jul 2016 17:38:08 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 12 Jul 2016 14:18:41 +0200
 
 plasma-discover (5.6.5-1) unstable; urgency=medium
 
