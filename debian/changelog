@@ -1,3 +1,12 @@
+plasma-discover (5.7.0-2~1.gbpfe691a) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @fe691aef5e2fd1c6a9e893f9ac0cf2670aae402f **
+
+  * Drop the TODO file, all items have been addressed
+  * Adjust packaging for the 5.7 release
+
+ -- Matthias Klumpp <mak@debian.org>  Tue, 12 Jul 2016 15:39:14 +0200
+
 plasma-discover (5.7.0-1) unstable; urgency=medium
 
   [ Matthias Klumpp ]
