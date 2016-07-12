@@ -1,2 +1,6 @@
+etc/xdg/discover_ktexteditor_codesnippets_core.knsrc
 usr/share/icons/hicolor/*/apps/plasmadiscover.*
+usr/share/kxmlgui5/plasmadiscover/*
+usr/share/libdiscover/*
 usr/share/locale/*
+usr/share/plasmadiscover/*

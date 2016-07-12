@@ -1,6 +1,12 @@
 usr/bin/plasma-discover
+usr/lib/*/plasma-discover/*
+usr/lib/*/qt5/plugins/discover-notifier/
+usr/lib/*/qt5/plugins/discover/
+usr/lib/*/qt5/qml/org/kde/discover/
 usr/lib/*/qt5/qml/org/kde/discovernotifier/libDiscoverNotifierDeclarativePlugin.so
 usr/lib/*/qt5/qml/org/kde/discovernotifier/qmldir
-usr/share/applications/org.kde.discover.desktop
-usr/share/kxmlgui5/plasmadiscover/
-usr/share/plasmadiscover/
+usr/share/appdata/*
+usr/share/applications/*
+usr/share/knotifications5/*
+usr/share/kservices5/*
+usr/share/plasma/plasmoids/*

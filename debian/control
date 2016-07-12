@@ -47,47 +47,34 @@ Architecture: any
 Depends: appstream,
          packagekit,
          plasma-discover-common (= ${source:Version}),
-         plasma-discover-private (= ${binary:Version}),
-         ${misc:Depends},
-         ${shlibs:Depends}
-Breaks: muon-discover (<< 4:5.5.3a)
-Replaces: muon-discover (<< 4:5.5.3a)
-Recommends: software-properties-kde
-Suggests: plasma-discover-updater
-Description: Utility for browsing, installing and removing software
- Plasma Discover will help you browse through the huge applications library you
- have available and help you find the applications you're looking for.
- .
- To install or remove software using Discover, you need administrator
- access on the computer.
-
-Package: plasma-discover-updater
-Architecture: any
-Depends: packagekit,
-         plasma-discover-private (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
 Breaks: libmuon (<< 4:5.6),
+        muon-discover (<< 4:5.5.3a),
         muon-notifier (<< 4:5.5.3a),
-        muon-updater (<< 4:5.5.3a)
+        muon-updater (<< 4:5.5.3a),
+        plasma-discover-common (<< 5.7.0),
+        plasma-discover-private (<< 5.7.0),
+        plasma-discover-updater (<< 5.7.0)
 Replaces: libmuon (<< 4:5.6),
+          muon-discover (<< 4:5.5.3a),
           muon-notifier (<< 4:5.5.3a),
-          muon-updater (<< 4:5.5.3a)
-Description: Update manager for KDE
- Plasma Discover Updater is a graphical update manager for KDE. It is part of
- the Discover family of software and provides an interface similar to that of
- Discover.
-
-Package: plasma-discover-private
-Architecture: any
-Depends: policykit-1, ${misc:Depends}, ${shlibs:Depends}
-Breaks: libmuon (<< 4:5.6)
-Replaces: libmuon (<< 4:5.6)
-Description: Private runtime libraries for the Discover suite
- The Discover suite is a collection of software management applications
- built on the KDE platform.
+          muon-updater (<< 4:5.5.3a),
+          plasma-discover-common (<< 5.7.0),
+          plasma-discover-private (<< 5.7.0),
+          plasma-discover-updater (<< 5.7.0)
+Recommends: software-properties-kde
+Description: Discover software management suite
+ Discover is a graphical software manager for the Plasma workspace.
+ It helps users easily and quickly find applications and other software
+ they might want to install.
  .
- This package contains private runtime libraries
+ By allowing to navigate a software library by search, categories, top lists
+ along with detailed application information that includes screenshots
+ and reviews, users can more quickly find applications that suit their needs.
+ .
+ Discover will also keep the system up to date by notifying about updates and
+ installing them.
 
 Package: plasma-discover-common
 Architecture: all
@@ -104,7 +91,8 @@ Package: muon-discover
 Architecture: all
 Section: oldlibs
 Priority: extra
-Depends: plasma-discover, ${misc:Depends}
+Depends: plasma-discover,
+         ${misc:Depends}
 Description: Transitional package (muon-discover -> plasma-discover)
  This is a transitional package for plasma-discover and can safely be
  removed.
@@ -113,7 +101,8 @@ Package: muon-updater
 Architecture: all
 Section: oldlibs
 Priority: extra
-Depends: plasma-discover-updater, ${misc:Depends}
+Depends: plasma-discover-updater,
+         ${misc:Depends}
 Description: Transitional package (muon-updater -> plasma-discover-updater)
  This is a transitional package updating muon-updater to plasma-discover-updater
  and can safely be removed.
@@ -122,7 +111,8 @@ Package: muon-notifier
 Architecture: all
 Section: oldlibs
 Priority: extra
-Depends: plasma-discover-updater, ${misc:Depends}
+Depends: plasma-discover-updater,
+         ${misc:Depends}
 Description: Transitional package (muon-notifier -> plasma-discover-updater)
  This is a transitional package updating muon-notifier to
  plasma-discover-updater and can safely be removed.
