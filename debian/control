@@ -79,8 +79,12 @@ Description: Discover software management suite
 Package: plasma-discover-common
 Architecture: all
 Depends: ${misc:Depends}
-Breaks: muon-common (<< 4:5.5.3a)
-Replaces: muon-common (<< 4:5.5.3a)
+Breaks: muon-common (<< 4:5.5.3a),
+        plasma-discover (<< 5.7.0-2),
+        plasma-discover-common (<< 5.7.0)
+Replaces: muon-common (<< 4:5.5.3a),
+          plasma-discover (<< 5.7.0-2),
+          plasma-discover-common (<< 5.7.0)
 Description: Discover software manager suite (common data files)
  Discover is a graphical software manager for the Plasma workspace.
  .
