@@ -1,3 +1,9 @@
+plasma-discover (5.7.0-3) unstable; urgency=medium
+
+  * Add more Breaks/Replaces (Closes: #830948)
+
+ -- Matthias Klumpp <mak@debian.org>  Thu, 14 Jul 2016 15:00:38 +0200
+
 plasma-discover (5.7.0-2) unstable; urgency=medium
 
   * Adjust packaging for the 5.7 release
