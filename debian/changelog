@@ -1,3 +1,12 @@
+plasma-discover (5.7.1-1~3.gbpd129bc) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @d129bce751ac5e74324ffac4ec8f6c3c979c5ff8 **
+
+  * 
+  * Finalize changelog for 5.7.0-3
+
+ -- Matthias Klumpp <mak@debian.org>  Thu, 14 Jul 2016 17:57:07 +0200
+
 plasma-discover (5.7.0-3) unstable; urgency=medium
 
   * Add more Breaks/Replaces (Closes: #830948)
