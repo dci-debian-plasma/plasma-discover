@@ -1,3 +1,9 @@
+plasma-discover (5.7.1-1) unstable; urgency=medium
+
+  * New upstream bugfix release: 5.7.1
+
+ -- Matthias Klumpp <mak@debian.org>  Fri, 15 Jul 2016 16:42:30 +0200
+
 plasma-discover (5.7.0-3) unstable; urgency=medium
 
   * Add more Breaks/Replaces (Closes: #830948)
