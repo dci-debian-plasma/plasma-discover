@@ -44,8 +44,8 @@ Vcs-Git: https://anonscm.debian.org/git/pkg-kde/plasma/plasma-discover.git
 
 Package: plasma-discover
 Architecture: any
-Depends: appstream,
-         packagekit,
+Depends: appstream (>= 0.8),
+         packagekit (>= 1.0),
          plasma-discover-common (= ${source:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
@@ -81,10 +81,12 @@ Architecture: all
 Depends: ${misc:Depends}
 Breaks: muon-common (<< 4:5.5.3a),
         plasma-discover (<< 5.7.0-2),
-        plasma-discover-private (<< 5.7.0)
+        plasma-discover-private (<< 5.7.0),
+        plasma-discover-updater (<< 5.7.0)
 Replaces: muon-common (<< 4:5.5.3a),
           plasma-discover (<< 5.7.0-2),
-          plasma-discover-private (<< 5.7.0)
+          plasma-discover-private (<< 5.7.0),
+          plasma-discover-updater (<< 5.7.0)
 Description: Discover software manager suite (common data files)
  Discover is a graphical software manager for the Plasma workspace.
  .
