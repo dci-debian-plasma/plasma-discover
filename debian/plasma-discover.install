@@ -3,5 +3,5 @@ usr/lib/*/qt5/qml/org/kde/discovernotifier/libDiscoverNotifierDeclarativePlugin.
 usr/lib/*/qt5/qml/org/kde/discovernotifier/qmldir
 usr/share/applications/org.kde.discover.desktop
 usr/share/kxmlgui5/plasmadiscover/
-usr/share/metainfo/org.kde.discover.appdata.xml
+usr/share/appdata/org.kde.discover.appdata.xml
 usr/share/plasmadiscover/
