@@ -1,14 +1,15 @@
-plasma-discover (5.7.1-2~1.gbpaef2cd) UNRELEASED; urgency=medium
+plasma-discover (5.7.2-1~1.gbpd8676f) UNRELEASED; urgency=medium
 
-  ** SNAPSHOT build @aef2cde48ac35da24375a4b65406efd31a45ae39 **
+  ** SNAPSHOT build @d8676fa4bec0929f9b795ebb201f194964d3f146 **
 
   * Update changelog for 5.7.0-2~1.gbpfe691a release
   * Update changelog for 5.7.1-1~1.gbp0cafaa release
   * Update changelog for 5.7.1-1~2.gbp5ba611 release
   * Update changelog for 5.7.1-1~3.gbpd129bc release
   * Update changelog for 5.7.1-1~4.gbpee2b35 release
+  * UNRELEASED
 
- -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Sat, 16 Jul 2016 16:59:03 +0200
+ -- Automatic packaging <jenkins@gnuservers.com.ar>  Tue, 19 Jul 2016 19:39:16 +0200
 
 plasma-discover (5.7.1-1) unstable; urgency=medium
 
