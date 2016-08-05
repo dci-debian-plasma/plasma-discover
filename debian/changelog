@@ -13,7 +13,8 @@ plasma-discover (5.7.2-1~2.gbpdd00c8) UNRELEASED; urgency=medium
   * UNRELEASED
 
   [ Matthias Klumpp ]
-  * Drop muon-notifier/-updater: Packages are gone and have never been in a release
+  * Drop muon-notifier/-updater: Packages are gone and have never been in a
+    release (Closes: 832181)
 
  -- Matthias Klumpp <mak@debian.org>  Thu, 28 Jul 2016 23:39:14 +0200
 
