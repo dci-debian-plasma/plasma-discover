@@ -1,6 +1,6 @@
-plasma-discover (5.7.2-1~3.gbpa37afa) UNRELEASED; urgency=medium
+plasma-discover (5.7.3-1~1.gbp80ce17) UNRELEASED; urgency=medium
 
-  ** SNAPSHOT build @a37afabb0cc88129b736badfa2b276cea25619bd **
+  ** SNAPSHOT build @80ce173e0375b6270209b3de7b7903340553fab0 **
 
   [ Automatic packaging ]
   ** SNAPSHOT build @d8676fa4bec0929f9b795ebb201f194964d3f146 **
@@ -16,8 +16,9 @@ plasma-discover (5.7.2-1~3.gbpa37afa) UNRELEASED; urgency=medium
   * Drop muon-notifier/-updater: Packages are gone and have never been in a
     release (Closes: 832181)
   * UNRELEASED
+  * UNRELEASED
 
- -- Matthias Klumpp <jenkins@gnuservers.com.ar>  Fri, 05 Aug 2016 11:29:49 +0200
+ -- Matthias Klumpp <jenkins@gnuservers.com.ar>  Fri, 05 Aug 2016 13:39:18 +0200
 
 plasma-discover (5.7.1-1) unstable; urgency=medium
 
