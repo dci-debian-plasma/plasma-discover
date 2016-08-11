@@ -14,9 +14,6 @@ DEB_VERSION_UPSTREAM_REVISION := $(shell dpkg-parsechangelog | awk '/^Version: /
 override_dh_makeshlibs:
 	dh_makeshlibs -Xusr/lib/$(DEB_HOST_MULTIARCH)/qt5/plugins/discover* -V
 
-override_dh_gencontrol:
-	dh_gencontrol --remaining-packages
-
 # FIXME: tests are broken at time
 override_dh_auto_test:
 	:
