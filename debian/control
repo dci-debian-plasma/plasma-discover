@@ -92,13 +92,3 @@ Description: Discover software manager suite (common data files)
  .
  This package contains data files shared by various parts of the
  Discover suite.
-
-Package: muon-discover
-Architecture: all
-Section: oldlibs
-Priority: extra
-Depends: plasma-discover,
-         ${misc:Depends}
-Description: Transitional package (muon-discover -> plasma-discover)
- This is a transitional package for plasma-discover and can safely be
- removed.
