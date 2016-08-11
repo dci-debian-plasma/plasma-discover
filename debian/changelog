@@ -1,3 +1,11 @@
+plasma-discover (5.7.3-1) unstable; urgency=medium
+
+  * New upstream bugfix release: 5.7.3
+  * Drop muon transitional packages: They are obsolete and have
+    never been in a release (Closes: #832181)
+
+ -- Matthias Klumpp <mak@debian.org>  Thu, 11 Aug 2016 18:44:30 +0200
+
 plasma-discover (5.7.1-1) unstable; urgency=medium
 
   * New upstream bugfix release: 5.7.1
