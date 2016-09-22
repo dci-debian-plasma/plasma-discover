@@ -9,6 +9,7 @@ Build-Depends: cmake (>= 2.8.12),
                extra-cmake-modules (>= 5.18.0~),
                kinit-dev (>= 5.18.0~),
                kio-dev (>= 5.18.0~),
+               kirigami,
                libappstreamqt-dev,
                libdebconf-kde-dev (>= 1.0.0),
                libkf5attica-dev (>= 5.18.0~),
@@ -44,13 +45,13 @@ Vcs-Git: https://anonscm.debian.org/git/pkg-kde/plasma/plasma-discover.git
 Package: plasma-discover
 Architecture: any
 Depends: appstream,
+         kirigami,
          packagekit,
          plasma-discover-common (= ${source:Version}),
          plasma-discover-private (= ${binary:Version}),
          qml-module-qtquick-layouts,
-         qml-module-qtquick2,
          qml-module-qtquick-templates2,
-         kirigami,
+         qml-module-qtquick2,
          ${misc:Depends},
          ${shlibs:Depends}
 Breaks: libdiscover,
@@ -81,14 +82,14 @@ Description: Utility for browsing, installing and removing software
 
 Package: plasma-discover-updater
 Architecture: any
-Depends: packagekit,
+Depends: kirigami,
+         packagekit,
          plasma-discover,
          plasma-discover-private (= ${binary:Version}),
          plasma-framework,
          qml-module-qtquick-layouts,
-         qml-module-qtquick2,
          qml-module-qtquick-templates2,
-         kirigami,
+         qml-module-qtquick2,
          ${misc:Depends},
          ${shlibs:Depends}
 Breaks: libmuon (<< 4:5.6),
