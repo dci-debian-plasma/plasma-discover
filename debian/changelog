@@ -9,19 +9,21 @@ plasma-discover (5.8.3-1) unstable; urgency=medium
 
  -- Matthias Klumpp <mak@debian.org>  Sat, 05 Nov 2016 14:54:52 +0100
 
-plasma-discover (5.8.0-1~1.gbpc25bb4) UNRELEASED; urgency=medium
+plasma-discover (5.8.0-1~2.gbp2a1c1c) UNRELEASED; urgency=medium
 
-  ** SNAPSHOT build @c25bb4521e009ae41ec437d868dfde4b2e451594 **
+  ** SNAPSHOT build @2a1c1c02a3caf682b97a095940fa0a9d9ab93962 **
 
   [ Maximiliano Curia ]
   ** SNAPSHOT build @89348d95b90611116c747baebc70d3e86bfce8fa **
 
   * UNRELEASED
+  * Update install files
+  * Add qml-module-org-kde-kirigami runtime dependency
 
   [ Automatic packaging ]
   * Update build-deps and deps with the info from cmake
 
- -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Tue, 04 Oct 2016 13:41:42 +0200
+ -- Maximiliano Curia <maxy@gnuservers.com.ar>  Tue, 04 Oct 2016 14:50:53 +0200
 
 plasma-discover (5.7.4-1) unstable; urgency=medium
 
