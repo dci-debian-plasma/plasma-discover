@@ -47,6 +47,7 @@ Architecture: any
 Depends: appstream (>= 0.8),
          packagekit (>= 1.0),
          plasma-discover-common (= ${source:Version}),
+         qml-module-org-kde-kirigami,
          ${misc:Depends},
          ${shlibs:Depends}
 Breaks: libmuon (<< 4:5.6),
