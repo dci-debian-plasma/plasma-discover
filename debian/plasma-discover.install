@@ -9,4 +9,5 @@ usr/share/applications/*
 usr/share/knotifications5/*
 usr/share/kservices5/*
 usr/share/metainfo/org.kde.discover.appdata.xml
+usr/share/metainfo/org.kde.discovernotifier.appdata.xml
 usr/share/plasma/plasmoids/*
