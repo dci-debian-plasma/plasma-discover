@@ -14,14 +14,9 @@ plasma-discover (5.8.1-1~1.gbp354245) UNRELEASED; urgency=medium
   ** SNAPSHOT build @3542459dd530d8a0fb3f720574569c621884591b **
 
   [ Maximiliano Curia ]
-  ** SNAPSHOT build @89348d95b90611116c747baebc70d3e86bfce8fa **
-
-  * UNRELEASED
   * Update install files
   * Add qml-module-org-kde-kirigami runtime dependency
-  * UNRELEASED
   * Update install files
-  * UNRELEASED
 
   [ Automatic packaging ]
   * Update build-deps and deps with the info from cmake
