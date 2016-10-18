@@ -1,6 +1,6 @@
-plasma-discover (5.8.1-1~1.gbp354245) UNRELEASED; urgency=medium
+plasma-discover (5.8.2-1~1.gbp852108) UNRELEASED; urgency=medium
 
-  ** SNAPSHOT build @3542459dd530d8a0fb3f720574569c621884591b **
+  ** SNAPSHOT build @8521081eebc7e0588e860c64be2e43e21fd691e7 **
 
   [ Maximiliano Curia ]
   ** SNAPSHOT build @89348d95b90611116c747baebc70d3e86bfce8fa **
@@ -11,11 +11,12 @@ plasma-discover (5.8.1-1~1.gbp354245) UNRELEASED; urgency=medium
   * UNRELEASED
   * Update install files
   * UNRELEASED
+  * UNRELEASED
 
   [ Automatic packaging ]
   * Update build-deps and deps with the info from cmake
 
- -- Maximiliano Curia <jenkins@gnuservers.com.ar>  Thu, 13 Oct 2016 19:39:41 +0200
+ -- Maximiliano Curia <jenkins@gnuservers.com.ar>  Tue, 18 Oct 2016 19:39:54 +0200
 
 plasma-discover (5.7.4-1) unstable; urgency=medium
 
