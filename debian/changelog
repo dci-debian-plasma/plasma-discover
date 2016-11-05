@@ -1,6 +1,11 @@
-plasma-discover (5.8.3-1) UNRELEASED; urgency=medium
+plasma-discover (5.8.3-1) unstable; urgency=medium
 
   * New upstream release: 5.8.3
+    - Closes: #838734
+  * Depend on Kirigami
+  * new-appstreamqt.patch: Compile with recent AppStreamQt
+  * Update .install files
+  * Build-depend on libkf5plasma-dev (Closes: #843228)
 
  -- Matthias Klumpp <mak@debian.org>  Sat, 05 Nov 2016 14:54:52 +0100
 
