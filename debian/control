@@ -35,6 +35,7 @@ Build-Depends: cmake (>= 2.8.12),
                pkg-config,
                pkg-kde-tools (>= 0.15.16),
                plasma-framework-dev (>= 5.16.0~),
+               qml-module-org-kde-kirigami,
                qtbase5-dev (>= 5.4.0~),
                qtdeclarative5-dev (>= 5.4.0~)
 Standards-Version: 3.9.8
@@ -47,6 +48,7 @@ Architecture: any
 Depends: appstream (>= 0.8),
          packagekit (>= 1.0),
          plasma-discover-common (= ${source:Version}),
+         qml-module-org-kde-kirigami,
          ${misc:Depends},
          ${shlibs:Depends}
 Breaks: libmuon (<< 4:5.6),
