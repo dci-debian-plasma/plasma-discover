@@ -1,3 +1,24 @@
+plasma-discover (5.8.3-2~1.gbp684fc8) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @684fc8633ac68466e784d16c2543966d2c24782c **
+
+  [ Automatic packaging ]
+  * Update changelog for 5.7.5-1~1.gbp89348d release
+  * Update build-deps and deps with the info from cmake
+  * Update changelog for 5.8.0-1~1.gbpc25bb4 release
+  * Update changelog for 5.8.0-1~2.gbp2a1c1c release
+  * Update changelog for 5.8.0-1~3.gbp87aa2d release
+  * Update changelog for 5.8.0-1~4.gbpf3d236 release
+  * Update changelog for 5.8.1-1~1.gbp354245 release
+  * Update changelog for 5.8.2-1~1.gbp852108 release
+
+  [ Maximiliano Curia ]
+  * Update install files
+  * Add qml-module-org-kde-kirigami runtime dependency
+  * Update install files
+
+ -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Sun, 06 Nov 2016 22:47:24 +0100
+
 plasma-discover (5.8.3-1) unstable; urgency=medium
 
   * New upstream release: 5.8.3
