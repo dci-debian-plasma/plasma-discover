@@ -1,0 +1,48 @@
+commit 1343fee00aa15f8722b42686088112bbf582b583
+Author: Aleix Pol <aleixpol@kde.org>
+Date:   Thu Nov 10 17:57:29 2016 +0100
+
+    Make it possible to compile with the old and new App*treamConfig.cmake
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index f3a36af..aa19163 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -28,7 +28,10 @@ if (NOT packagekitqt5_FOUND)
+         find_package(KF5 REQUIRED IconThemes Notifications KIO)
+     endif()
+ endif()
+-find_package(AppstreamQt 0.10)
++find_package(AppStreamQt 0.10)
++if (NOT AppstreamQt_FOUND)
++    find_package(AppstreamQt 0.10 QUIET)
++endif()
+ find_package(KF5Attica 5.23)
+ find_package(KF5NewStuff 5.23)
+ 
+diff --git a/libdiscover/backends/CMakeLists.txt b/libdiscover/backends/CMakeLists.txt
+index 93497f6..372ef88 100644
+--- a/libdiscover/backends/CMakeLists.txt
++++ b/libdiscover/backends/CMakeLists.txt
+@@ -20,7 +20,7 @@ if(BODEGA_FOUND)
+     add_subdirectory(BodegaBackend)
+ endif()
+ 
+-if(packagekitqt5_FOUND AND AppstreamQt_FOUND)
++if(packagekitqt5_FOUND AND (AppstreamQt_FOUND OR AppStreamQt_FOUND))
+     add_subdirectory(PackageKitBackend)
+ endif()
+ 
+diff --git a/libdiscover/backends/PackageKitBackend/CMakeLists.txt b/libdiscover/backends/PackageKitBackend/CMakeLists.txt
+index f8bb1d2..8267715 100644
+--- a/libdiscover/backends/PackageKitBackend/CMakeLists.txt
++++ b/libdiscover/backends/PackageKitBackend/CMakeLists.txt
+@@ -12,7 +12,7 @@ add_library(packagekit-backend MODULE PackageKitBackend.cpp
+ )
+ 
+ set(AppstreamTarget "AppstreamQt")
+-if (${AppstreamQt_VERSION} VERSION_GREATER 0.10.3)
++if (AppStreamQt_FOUND)
+     target_compile_definitions(packagekit-backend PRIVATE -DNEWAPPSTREAM=0)
+     set(AppstreamTarget "AppStreamQt")
+ endif()
