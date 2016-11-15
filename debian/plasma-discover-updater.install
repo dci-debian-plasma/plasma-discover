@@ -1,3 +1,4 @@
+usr/lib/*/qt5/plugins/discover-notifier/DiscoverPackageKitNotifier.so
 usr/share/knotifications5/
 usr/share/kservices5/plasma-applet-org.kde.discovernotifier.desktop
 usr/share/plasma/plasmoids/org.kde.discovernotifier/
