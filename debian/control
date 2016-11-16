@@ -95,11 +95,13 @@ Depends: packagekit,
 Breaks: libmuon (<< 4:5.6),
         muon-notifier (<< 4:5.5.3a),
         muon-updater (<< 4:5.5.3a),
-        plasma-discover (<< 5.8.0)
+        plasma-discover (<< 5.8.0),
+        plasma-discover-private (<< 5.8.0)
 Replaces: libmuon (<< 4:5.6),
           muon-notifier (<< 4:5.5.3a),
           muon-updater (<< 4:5.5.3a),
-          plasma-discover (<< 5.8.0)
+          plasma-discover (<< 5.8.0),
+          plasma-discover-private (<< 5.8.0)
 Description: Update manager for KDE
  Plasma Discover Updater is a graphical update manager for KDE. It is part of
  the Discover family of software and provides an interface similar to that of
@@ -122,11 +124,13 @@ Depends: ${misc:Depends}
 Breaks: libdiscovercommon (<< 5.7.0),
         muon-common (<< 4:5.5.3a),
         plasma-discover (<< 5.6.4),
+        plasma-discover-private (<< 5.8.0),
         plasma-discover-updater (<< 5.6.4)
 Replaces: libdiscovercommon (<< 5.7.0),
           muon-common (<< 4:5.5.3a),
           plasma-discover (<< 5.6.4),
           plasma-discover-updater (<< 5.6.4)
+	  plasma-discover-private (<< 5.8.0)
 Description: Discover software manager suite (common data files)
  Discover is a graphical software manager for the Plasma workspace.
  .
