@@ -121,11 +121,11 @@ Architecture: all
 Depends: ${misc:Depends}
 Breaks: libdiscovercommon (<< 5.7.0),
         muon-common (<< 4:5.5.3a),
-        plasma-discover (<< 5.6.4),
+        plasma-discover (<< 5.8.4),
         plasma-discover-updater (<< 5.6.4)
 Replaces: libdiscovercommon (<< 5.7.0),
           muon-common (<< 4:5.5.3a),
-          plasma-discover (<< 5.6.4),
+          plasma-discover (<< 5.8.4),
           plasma-discover-updater (<< 5.6.4)
 Description: Discover software manager suite (common data files)
  Discover is a graphical software manager for the Plasma workspace.

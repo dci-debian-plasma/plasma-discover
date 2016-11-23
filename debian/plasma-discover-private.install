@@ -1,3 +1,4 @@
+usr/lib/*/libexec/kf5/discover/runservice
 usr/lib/*/plasma-discover/*
 usr/lib/*/qt5/plugins/discover-notifier/
 usr/lib/*/qt5/plugins/discover/
