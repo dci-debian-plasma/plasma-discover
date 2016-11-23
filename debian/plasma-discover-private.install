@@ -1,5 +1,5 @@
+usr/lib/*/libexec/kf5/discover/runservice
 usr/lib/*/plasma-discover/*
 usr/lib/*/qt5/plugins/discover/
 usr/lib/*/qt5/qml/org/kde/discover/
 usr/share/libdiscover/
-usr/lib/*/libexec/kf5/discover/runservice
