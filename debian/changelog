@@ -1,11 +1,14 @@
-plasma-discover (5.8.3-2~1.gbp684fc8) UNRELEASED; urgency=medium
+plasma-discover (5.8.5-1~) UNRELEASED; urgency=medium
 
   ** SNAPSHOT build @684fc8633ac68466e784d16c2543966d2c24782c **
 
   [ Automatic packaging ]
   * Update build-deps and deps with the info from cmake
 
- -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Sun, 06 Nov 2016 22:47:24 +0100
+  [ Maximiliano Curia ]
+  * New upstream release (5.8.5).
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 28 Dec 2016 15:24:38 +0100
 
 plasma-discover (5.8.3-1) unstable; urgency=medium
 
