@@ -1,4 +1,4 @@
-plasma-discover (5.8.5-1~) UNRELEASED; urgency=medium
+plasma-discover (5.8.5-1) experimental; urgency=medium
 
   ** SNAPSHOT build @684fc8633ac68466e784d16c2543966d2c24782c **
 
@@ -10,7 +10,7 @@ plasma-discover (5.8.5-1~) UNRELEASED; urgency=medium
   * Drop upstream patch: 01_new-appstreamqt.patch
   * Update install file
 
- -- Maximiliano Curia <maxy@debian.org>  Wed, 28 Dec 2016 15:24:38 +0100
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 30 Dec 2016 18:46:21 +0100
 
 plasma-discover (5.8.3-1) unstable; urgency=medium
 
