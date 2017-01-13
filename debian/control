@@ -97,13 +97,13 @@ Depends: packagekit,
 Breaks: libmuon (<< 4:5.6),
         muon-notifier (<< 4:5.5.3a),
         muon-updater (<< 4:5.5.3a),
-        plasma-discover (<< 5.8.0),
-        plasma-discover-private (<< 5.8.0)
+        plasma-discover (<< ${source:Version}~ciBuild),
+        plasma-discover-private (<< ${source:Version}~ciBuild)
 Replaces: libmuon (<< 4:5.6),
           muon-notifier (<< 4:5.5.3a),
           muon-updater (<< 4:5.5.3a),
-          plasma-discover (<< 5.8.0),
-          plasma-discover-private (<< 5.8.0)
+          plasma-discover (<< ${source:Version}~ciBuild),
+          plasma-discover-private (<< ${source:Version}~ciBuild)
 Description: Update manager for KDE
  Plasma Discover Updater is a graphical update manager for KDE. It is part of
  the Discover family of software and provides an interface similar to that of
