@@ -1,4 +1,4 @@
-extra/90plasmadiscover /etc/apt/apt.conf.d/
+debian/extra/90plasmadiscover /etc/apt/apt.conf.d/
 usr/bin/plasma-discover
 usr/lib/*/libexec/kf5/discover/runservice
 usr/lib/*/plasma-discover/*
