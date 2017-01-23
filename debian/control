@@ -139,6 +139,14 @@ Description: Discover software manager suite (common data files)
  This package contains data files shared by various parts of the
  Discover suite.
 
+Package: plasma-discover-snap-backend
+Architecture: all
+Depends: ${misc:Depends}
+Description: Discover software manager suite - Snappy support
+ Discover is a graphical software manager for the Plasma workspace.
+ .
+ This package contains support for Snapcraft package format.
+
 Package: muon-discover
 Architecture: all
 Section: oldlibs
