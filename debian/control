@@ -140,7 +140,7 @@ Description: Discover software manager suite (common data files)
  Discover suite.
 
 Package: plasma-discover-snap-backend
-Architecture: all
+Architecture: any
 Depends: ${misc:Depends}
 Description: Discover software manager suite - Snappy support
  Discover is a graphical software manager for the Plasma workspace.

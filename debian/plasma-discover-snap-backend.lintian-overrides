@@ -1,0 +1,1 @@
+plasma-discover-snap-backend: postinst-must-call-ldconfig usr/lib/x86_64-linux-gnu/libSnapClient.so
