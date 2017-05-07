@@ -1,0 +1,2 @@
+usr/lib/*/qt5/plugins/discover-notifier/FlatpakNotifier.so
+usr/share/applications/org.kde.discover-flatpak.desktop
