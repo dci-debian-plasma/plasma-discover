@@ -12,6 +12,7 @@ Build-Depends: cmake (>= 2.8.12),
                kirigami2-dev,
                libappstreamqt-dev,
                libdebconf-kde-dev (>= 1.0.0),
+               libflatpak-dev,
                libkf5attica-dev (>= 5.18.0~),
                libkf5config-dev (>= 5.18.0~),
                libkf5configwidgets-dev (>= 5.18.0~),
@@ -141,11 +142,19 @@ Description: Discover software manager suite (common data files)
 
 Package: plasma-discover-snap-backend
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: snapd, ${misc:Depends}, ${shlibs:Depends}
 Description: Discover software manager suite - Snappy support
  Discover is a graphical software manager for the Plasma workspace.
  .
  This package contains support for Snapcraft package format.
+
+Package: plasma-discover-flatpak-backend
+Architecture: any
+Depends: flatpak, ${misc:Depends}, ${shlibs:Depends}
+Description: Discover software manager suite - Flatpak support
+ Discover is a graphical software manager for the Plasma workspace.
+ .
+ This package contains support for Flatpak package format.
 
 Package: muon-discover
 Architecture: all
