@@ -147,8 +147,8 @@ Description: Discover software manager suite (common data files)
 Package: plasma-discover-snap-backend
 Architecture: any
 Depends: plasma-discover, snapd, ${misc:Depends}, ${shlibs:Depends}
-Breaks: plasma-discover-private (<< ${source:Version}~ciBuild)
-Replaces: plasma-discover-private (<< ${source:Version}~ciBuild)
+Breaks: plasma-discover-private (<< 5.10.0)
+Replaces: plasma-discover-private (<< 5.10.0)
 Description: Discover software manager suite - Snappy support
  Discover is a graphical software manager for the Plasma workspace.
  .
@@ -157,8 +157,8 @@ Description: Discover software manager suite - Snappy support
 Package: plasma-discover-flatpak-backend
 Architecture: any
 Depends: flatpak, plasma-discover, ${misc:Depends}, ${shlibs:Depends}
-Breaks: plasma-discover-private (<< ${source:Version}~ciBuild)
-Replaces: plasma-discover-private (<< ${source:Version}~ciBuild)
+Breaks: plasma-discover-private (<< 5.10.0)
+Replaces: plasma-discover-private (<< 5.10.0)
 Description: Discover software manager suite - Flatpak support
  Discover is a graphical software manager for the Plasma workspace.
  .
