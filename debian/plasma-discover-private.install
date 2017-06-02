@@ -1,5 +1,6 @@
 usr/lib/*/libexec/kf5/discover/runservice
 usr/lib/*/plasma-discover/*
-usr/lib/*/qt5/plugins/discover/
+usr/lib/*/qt5/plugins/discover/kns-backend.so
+usr/lib/*/qt5/plugins/discover/packagekit-backend.so
 usr/lib/*/qt5/qml/org/kde/discover/
-usr/share/libdiscover/
+usr/share/libdiscover/categories/packagekit-backend-categories.xml
