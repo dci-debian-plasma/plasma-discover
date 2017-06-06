@@ -1,5 +1,5 @@
 etc/dbus-1/system.d/org.kde.discover.libsnapclient.conf
-usr/lib/*/libSnapClient.so
+usr/lib/*/libDiscoverSnapClient.so
 usr/lib/*/libexec/kauth/libsnap_helper
 usr/lib/*/qt5/plugins/discover/snap-backend.so
 usr/share/dbus-1/system-services/org.kde.discover.libsnapclient.service
