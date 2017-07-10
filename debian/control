@@ -39,7 +39,7 @@ Build-Depends: cmake (>= 2.8.12),
                qml-module-org-kde-kirigami,
                qtbase5-dev (>= 5.7.0~),
                qtdeclarative5-dev (>= 5.7.0~)
-Standards-Version: 3.9.8
+Standards-Version: 4.0.0
 Homepage: https://projects.kde.org/projects/kde/workspace/discover
 Vcs-Browser: https://anonscm.debian.org/git/pkg-kde/plasma/plasma-discover.git
 Vcs-Git: https://anonscm.debian.org/git/pkg-kde/plasma/plasma-discover.git
