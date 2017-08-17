@@ -3,7 +3,7 @@ Section: kde
 Priority: optional
 Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Maximiliano Curia <maxy@debian.org>,
-           Matthias Klumpp <mak@debian.org>
+           Matthias Klumpp <mak@debian.org>,
 Build-Depends: cmake (>= 2.8.12),
                debhelper (>= 9),
                extra-cmake-modules (>= 5.16.0~),
@@ -38,7 +38,7 @@ Build-Depends: cmake (>= 2.8.12),
                pkg-config,
                pkg-kde-tools (>= 0.15.16),
                qtbase5-dev (>= 5.7.0~),
-               qtdeclarative5-dev (>= 5.7.0~)
+               qtdeclarative5-dev (>= 5.7.0~),
 Standards-Version: 4.0.0
 Homepage: https://projects.kde.org/projects/kde/workspace/discover
 Vcs-Browser: https://anonscm.debian.org/git/pkg-kde/plasma/plasma-discover.git
@@ -51,21 +51,21 @@ Depends: appstream (>= 0.8),
          plasma-discover-common (= ${source:Version}),
          qml-module-org-kde-kirigami2,
          ${misc:Depends},
-         ${shlibs:Depends}
+         ${shlibs:Depends},
 Breaks: libmuon (<< 4:5.6),
         muon-discover (<< 4:5.5.3a),
         muon-notifier (<< 4:5.5.3a),
         muon-updater (<< 4:5.5.3a),
         plasma-discover-common (<< 5.7.0),
         plasma-discover-private (<< 5.7.0),
-        plasma-discover-updater (<< 5.7.0)
+        plasma-discover-updater (<< 5.7.0),
 Replaces: libmuon (<< 4:5.6),
           muon-discover (<< 4:5.5.3a),
           muon-notifier (<< 4:5.5.3a),
           muon-updater (<< 4:5.5.3a),
           plasma-discover-common (<< 5.7.0),
           plasma-discover-private (<< 5.7.0),
-          plasma-discover-updater (<< 5.7.0)
+          plasma-discover-updater (<< 5.7.0),
 Recommends: software-properties-kde
 Description: Discover software management suite
  Discover is a graphical software manager for the Plasma workspace.
@@ -85,11 +85,11 @@ Depends: ${misc:Depends}
 Breaks: muon-common (<< 4:5.5.3a),
         plasma-discover (<< 5.7.0-2),
         plasma-discover-private (<< 5.7.0),
-        plasma-discover-updater (<< 5.7.0)
+        plasma-discover-updater (<< 5.7.0),
 Replaces: muon-common (<< 4:5.5.3a),
           plasma-discover (<< 5.7.0-2),
           plasma-discover-private (<< 5.7.0),
-          plasma-discover-updater (<< 5.7.0)
+          plasma-discover-updater (<< 5.7.0),
 Description: Discover software manager suite (common data files)
  Discover is a graphical software manager for the Plasma workspace.
  .
