@@ -168,7 +168,7 @@ Description: Discover software manager suite - Flatpak support
 Package: muon-discover
 Architecture: all
 Section: oldlibs
-Priority: extra
+Priority: optional
 Depends: plasma-discover, ${misc:Depends}
 Description: Transitional package (muon-discover -> plasma-discover)
  This is a transitional package for plasma-discover and can safely be
@@ -191,3 +191,4 @@ Depends: plasma-discover-updater, ${misc:Depends}
 Description: Transitional package (muon-notifier -> plasma-discover-updater)
  This is a transitional package updating muon-notifier to
  plasma-discover-updater and can safely be removed.
+
