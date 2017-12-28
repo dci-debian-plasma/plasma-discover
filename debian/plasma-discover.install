@@ -4,7 +4,6 @@ usr/lib/*/libexec/kf5/discover/runservice
 usr/lib/*/plasma-discover/*
 usr/lib/*/qt5/plugins/discover-notifier/*
 usr/lib/*/qt5/plugins/discover/*
-usr/lib/*/qt5/qml/org/kde/discover/*
 usr/lib/*/qt5/qml/org/kde/discovernotifier/libDiscoverNotifierDeclarativePlugin.so
 usr/lib/*/qt5/qml/org/kde/discovernotifier/qmldir
 usr/share/applications/*
