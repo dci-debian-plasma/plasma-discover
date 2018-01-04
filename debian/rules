@@ -7,7 +7,7 @@ PLASMA_DISCOVER_FLAGS = -DBUILD_FlatpakBackend=ON \
 			-DBUILD_SnapBackend=ON
 
 %:
-	dh $@ --with kf5,pkgkde_symbolshelper --buildsystem kf5
+	dh $@ --with kf5,pkgkde_symbolshelper --buildsystem kf5 --without build_stamp
 
 override_dh_auto_configure:
 	dh_auto_configure -- $(PLASMA_DISCOVER_FLAGS)
