@@ -191,4 +191,3 @@ Depends: plasma-discover-updater, ${misc:Depends}
 Description: Transitional package (muon-notifier -> plasma-discover-updater)
  This is a transitional package updating muon-notifier to
  plasma-discover-updater and can safely be removed.
-
