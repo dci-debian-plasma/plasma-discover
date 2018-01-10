@@ -6,4 +6,5 @@ usr/share/applications/org.kde.discover.desktop
 usr/share/applications/org.kde.discover.urlhandler.desktop
 usr/share/kxmlgui5/plasmadiscover/
 usr/share/metainfo/org.kde.discover.appdata.xml
+usr/share/metainfo/org.kde.discover.packagekit.appdata.xml
 usr/share/metainfo/org.kde.discovernotifier.appdata.xml
