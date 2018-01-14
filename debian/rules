@@ -3,8 +3,14 @@
 DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 DEB_VERSION_UPSTREAM_REVISION := $(shell dpkg-parsechangelog | awk '/^Version: / { print $$2 }' | sed -e 's/^[0-9]*://')
 
+PLASMA_DISCOVER_FLAGS = -DBUILD_FlatpakBackend=ON \
+			-DBUILD_SnapBackend=ON
+
 %:
 	dh $@ --with kf5,pkgkde_symbolshelper --buildsystem kf5
+
+override_dh_auto_configure:
+	dh_auto_configure -- $(PLASMA_DISCOVER_FLAGS)
 
 # Do not pull plugins into the shlibs file, it makes lintian angry.
 # This happens because dh_makeshlibs will look for sonames matching
@@ -14,6 +20,9 @@ DEB_VERSION_UPSTREAM_REVISION := $(shell dpkg-parsechangelog | awk '/^Version: /
 # Couldn't be bothered to report this - sitter, 2015
 override_dh_makeshlibs:
 	dh_makeshlibs -Xusr/lib/$(DEB_HOST_MULTIARCH)/qt5/plugins/discover* -V
+
+override_dh_missing:
+	dh_missing --fail-missing
 
 # FIXME: tests are broken at time
 override_dh_auto_test:

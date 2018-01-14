@@ -2,11 +2,13 @@ debian/extra/60plasma-discover /etc/apt/apt.conf.d/
 usr/bin/plasma-discover
 usr/lib/*/libexec/kf5/discover/runservice
 usr/lib/*/plasma-discover/*
-usr/lib/*/qt5/plugins/discover-notifier/*
-usr/lib/*/qt5/plugins/discover/*
+usr/lib/*/qt5/plugins/discover-notifier/DiscoverPackageKitNotifier.so
+usr/lib/*/qt5/plugins/discover/kns-backend.so
+usr/lib/*/qt5/plugins/discover/packagekit-backend.so
 usr/lib/*/qt5/qml/org/kde/discovernotifier/libDiscoverNotifierDeclarativePlugin.so
 usr/lib/*/qt5/qml/org/kde/discovernotifier/qmldir
-usr/share/applications/*
+usr/share/applications/org.kde.discover.desktop
+usr/share/applications/org.kde.discover.urlhandler.desktop
 usr/share/knotifications5/*
 usr/share/kservices5/*
 usr/share/metainfo/*
