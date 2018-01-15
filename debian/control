@@ -103,7 +103,8 @@ Package: plasma-discover-backend-flatpak
 Architecture: any
 Depends: flatpak,
          plasma-discover (= ${source:Version}),
-         ${misc:Depends}
+         ${misc:Depends},
+         ${shlibs:Depends}
 Description: Discover software management suite
  Discover is a graphical software manager for the Plasma workspace.
  It helps users easily and quickly find applications and other software
@@ -116,7 +117,8 @@ Package: plasma-discover-backend-snap
 Architecture: any
 Depends: plasma-discover (= ${source:Version}),
          snapd,
-         ${misc:Depends}
+         ${misc:Depends},
+         ${shlibs:Depends}
 Description: Discover software management suite
  Discover is a graphical software manager for the Plasma workspace.
  It helps users easily and quickly find applications and other software
