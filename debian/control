@@ -102,7 +102,7 @@ Description: Discover software manager suite (common data files)
 Package: plasma-discover-backend-flatpak
 Architecture: any
 Depends: flatpak,
-         plasma-discover (= ${source:Version}),
+         plasma-discover (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
 Description: Discover software management suite
@@ -115,7 +115,7 @@ Description: Discover software management suite
 
 Package: plasma-discover-backend-snap
 Architecture: any
-Depends: plasma-discover (= ${source:Version}),
+Depends: plasma-discover (= ${binary:Version}),
          snapd,
          ${misc:Depends},
          ${shlibs:Depends}
