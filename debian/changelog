@@ -1,3 +1,10 @@
+plasma-discover (5.11.5-1) experimental; urgency=medium
+
+  * New upstream release: 5.11.5
+  * Add Flatpak and Snap backends
+
+ -- Matthias Klumpp <mak@debian.org>  Sun, 14 Jan 2018 22:21:01 +0100
+
 plasma-discover (5.11.4-1) experimental; urgency=medium
 
   * New upstream release (5.11.4).
