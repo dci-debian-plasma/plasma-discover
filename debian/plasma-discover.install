@@ -7,6 +7,7 @@ usr/lib/*/qt5/plugins/discover/kns-backend.so
 usr/lib/*/qt5/plugins/discover/packagekit-backend.so
 usr/lib/*/qt5/qml/org/kde/discovernotifier/libDiscoverNotifierDeclarativePlugin.so
 usr/lib/*/qt5/qml/org/kde/discovernotifier/qmldir
+usr/share/applications/org.kde.discover.apt.urlhandler.desktop
 usr/share/applications/org.kde.discover.desktop
 usr/share/applications/org.kde.discover.urlhandler.desktop
 usr/share/knotifications5/*
