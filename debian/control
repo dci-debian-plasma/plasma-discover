@@ -105,7 +105,7 @@ Depends: flatpak,
          plasma-discover (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
-Description: Discover software management suite
+Description: Discover software management suite - Flatpak backend
  Discover is a graphical software manager for the Plasma workspace.
  It helps users easily and quickly find applications and other software
  they might want to install.
@@ -119,7 +119,7 @@ Depends: plasma-discover (= ${binary:Version}),
          snapd,
          ${misc:Depends},
          ${shlibs:Depends}
-Description: Discover software management suite
+Description: Discover software management suite - Snap backend
  Discover is a graphical software manager for the Plasma workspace.
  It helps users easily and quickly find applications and other software
  they might want to install.
