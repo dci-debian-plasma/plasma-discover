@@ -3,7 +3,7 @@ Section: kde
 Priority: optional
 Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Maximiliano Curia <maxy@debian.org>,
-           Matthias Klumpp <mak@debian.org>
+           Matthias Klumpp <mak@debian.org>,
 Build-Depends: cmake (>= 2.8.12),
                debhelper (>= 11~),
                extra-cmake-modules (>= 5.16.0~),
@@ -40,7 +40,7 @@ Build-Depends: cmake (>= 2.8.12),
                pkg-config,
                pkg-kde-tools (>= 0.15.16),
                qtbase5-dev (>= 5.7.0~),
-               qtdeclarative5-dev (>= 5.7.0~)
+               qtdeclarative5-dev (>= 5.7.0~),
 Standards-Version: 4.1.2
 Homepage: https://projects.kde.org/projects/kde/workspace/discover
 Vcs-Browser: https://anonscm.debian.org/git/pkg-kde/plasma/plasma-discover.git
@@ -53,21 +53,21 @@ Depends: appstream (>= 0.8),
          plasma-discover-common (= ${source:Version}),
          qml-module-org-kde-kirigami2 (>= 5.42),
          ${misc:Depends},
-         ${shlibs:Depends}
+         ${shlibs:Depends},
 Breaks: libmuon (<< 4:5.6),
         muon-discover (<< 4:5.5.3a),
         muon-notifier (<< 4:5.5.3a),
         muon-updater (<< 4:5.5.3a),
         plasma-discover-common (<< 5.7.0),
         plasma-discover-private (<< 5.7.0),
-        plasma-discover-updater (<< 5.7.0)
+        plasma-discover-updater (<< 5.7.0),
 Replaces: libmuon (<< 4:5.6),
           muon-discover (<< 4:5.5.3a),
           muon-notifier (<< 4:5.5.3a),
           muon-updater (<< 4:5.5.3a),
           plasma-discover-common (<< 5.7.0),
           plasma-discover-private (<< 5.7.0),
-          plasma-discover-updater (<< 5.7.0)
+          plasma-discover-updater (<< 5.7.0),
 Recommends: software-properties-kde
 Suggests: plasma-discover-backend-flatpak
 Description: Discover software management suite
@@ -82,29 +82,12 @@ Description: Discover software management suite
  Discover will also keep the system up to date by notifying about updates and
  installing them.
 
-Package: plasma-discover-common
-Architecture: all
-Depends: ${misc:Depends}
-Breaks: muon-common (<< 4:5.5.3a),
-        plasma-discover (<< 5.7.0-2),
-        plasma-discover-private (<< 5.7.0),
-        plasma-discover-updater (<< 5.7.0)
-Replaces: muon-common (<< 4:5.5.3a),
-          plasma-discover (<< 5.7.0-2),
-          plasma-discover-private (<< 5.7.0),
-          plasma-discover-updater (<< 5.7.0)
-Description: Discover software manager suite (common data files)
- Discover is a graphical software manager for the Plasma workspace.
- .
- This package contains data files shared by various parts of the
- Discover suite.
-
 Package: plasma-discover-backend-flatpak
 Architecture: any
 Depends: flatpak,
          plasma-discover (= ${binary:Version}),
          ${misc:Depends},
-         ${shlibs:Depends}
+         ${shlibs:Depends},
 Description: Discover software management suite - Flatpak backend
  Discover is a graphical software manager for the Plasma workspace.
  It helps users easily and quickly find applications and other software
@@ -118,7 +101,7 @@ Architecture: any
 Depends: plasma-discover (= ${binary:Version}),
          snapd,
          ${misc:Depends},
-         ${shlibs:Depends}
+         ${shlibs:Depends},
 Description: Discover software management suite - Snap backend
  Discover is a graphical software manager for the Plasma workspace.
  It helps users easily and quickly find applications and other software
@@ -126,3 +109,20 @@ Description: Discover software management suite - Snap backend
  .
  This package contains a backend for the Ubuntu Core Snappy application
  bundling system.
+
+Package: plasma-discover-common
+Architecture: all
+Depends: ${misc:Depends}
+Breaks: muon-common (<< 4:5.5.3a),
+        plasma-discover (<< 5.7.0-2),
+        plasma-discover-private (<< 5.7.0),
+        plasma-discover-updater (<< 5.7.0),
+Replaces: muon-common (<< 4:5.5.3a),
+          plasma-discover (<< 5.7.0-2),
+          plasma-discover-private (<< 5.7.0),
+          plasma-discover-updater (<< 5.7.0),
+Description: Discover software manager suite (common data files)
+ Discover is a graphical software manager for the Plasma workspace.
+ .
+ This package contains data files shared by various parts of the
+ Discover suite.
