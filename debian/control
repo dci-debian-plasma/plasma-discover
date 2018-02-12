@@ -3,7 +3,7 @@ Section: kde
 Priority: optional
 Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Maximiliano Curia <maxy@debian.org>,
-           Matthias Klumpp <mak@debian.org>,
+           Matthias Klumpp <mak@debian.org>
 Build-Depends: cmake (>= 2.8.12),
                debhelper (>= 11~),
                extra-cmake-modules (>= 5.16.0~),
