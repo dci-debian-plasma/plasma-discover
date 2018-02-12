@@ -1,3 +1,13 @@
+plasma-discover (5.12.0-3~) UNRELEASED; urgency=medium
+
+  * New revision
+  * Bump debhelper build-dep and compat to 11.
+  * Build without build_stamp
+  * Add link options as-needed
+  * Add Bhushan Shah upstream signing key
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 07 Feb 2018 11:22:01 +0100
+
 plasma-discover (5.12.0-2) unstable; urgency=medium
 
   * Upload to unstable
