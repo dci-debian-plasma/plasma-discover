@@ -1,3 +1,9 @@
+plasma-discover (5.12.0-4) unstable; urgency=medium
+
+  * Update d/copyright (Closes: #889808)
+
+ -- Matthias Klumpp <mak@debian.org>  Mon, 12 Feb 2018 14:45:24 +0100
+
 plasma-discover (5.12.0-3) unstable; urgency=medium
 
   [ Maximiliano Curia ]
