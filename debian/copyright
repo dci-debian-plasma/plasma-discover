@@ -1,13 +1,177 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: discover
 Upstream-Contact: Aleix Pol Gonzalez <aleixpol@kde.org>
-Source: git://anongit.kde.org/discover
+Source: https://cgit.kde.org/discover.git/
 
 Files: *
-Copyright: 2012-2016, Aleix Pol Gonzalez <aleixpol@blue-systems.com>
+Copyright: 2012-2018, Aleix Pol Gonzalez <aleixpol@blue-systems.com>
            2010-2013, Jonathan Thomas <echidnaman@kubuntu.org>
            2013, Lukas Appelhans <boom1992@chakra-project.org>
 License: GPL-2+3+KDEeV
+
+Files: debian/*
+Copyright: 2016-2018, Matthias Klumpp <mak@debian.org>
+  2015, Jonathan Riddell <jr@jriddell.org>
+  2010, Jonathan Thomas <echidnaman@kubuntu.org>
+License: GPL-3+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 3 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the full text of the GNU General Public License
+ version 3 can be found in the file `/usr/share/common-licenses/GPL-3'.
+
+Files: discover/UnityLauncher.cpp
+  discover/UnityLauncher.h
+Copyright: 2016, Kai Uwe Broulik <kde@privat.broulik.de>
+License: LGPL-2.1 or LGPL-3
+
+Files: libdiscover/CachedNetworkAccessManager.cpp
+  libdiscover/CachedNetworkAccessManager.h
+Copyright: 2017, Jan Grulich <jgrulich@redhat.com>
+  2013, 2014, 2017, Aleix Pol Gonzalez <aleixpol@blue-systems.com>
+License: GPL-2+3+KDEeV
+
+Files: libdiscover/Category/Category.cpp
+  libdiscover/Category/Category.h
+Copyright: 2010-2012, Jonathan Thomas <echidnaman@kubuntu.org>
+License: GPL-2+3+KDEeV
+
+Files: libdiscover/ReviewsBackend/*
+Copyright: 2010-2012, Jonathan Thomas <echidnaman@kubuntu.org>
+License: GPL-2+3+KDEeV
+
+Files: libdiscover/Transaction/*
+Copyright: 2010-2012, Jonathan Thomas <echidnaman@kubuntu.org>
+License: GPL-2+3+KDEeV
+
+Files: libdiscover/Transaction/TransactionListener.cpp
+  libdiscover/Transaction/TransactionListener.h
+Copyright: 2012, Aleix Pol Gonzalez <aleixpol@blue-systems.com>
+  2010, Jonathan Thomas <echidnaman@kubuntu.org>
+License: GPL-2+3+KDEeV
+
+Files: libdiscover/UpdateModel/*
+Copyright: 2010-2012, Jonathan Thomas <echidnaman@kubuntu.org>
+License: GPL-2+3+KDEeV
+
+Files: libdiscover/appstream/*
+Copyright: 2017, Aleix Pol Gonzalez <aleixpol@kde.org>
+License: GPL-2+3+KDEeV
+
+Files: libdiscover/appstream/OdrsReviewsBackend.cpp
+  libdiscover/appstream/OdrsReviewsBackend.h
+Copyright: 2017, Jan Grulich <jgrulich@redhat.com>
+  2013, 2014, 2017, Aleix Pol Gonzalez <aleixpol@blue-systems.com>
+License: GPL-2+3+KDEeV
+
+Files: libdiscover/backends/DummyBackend/DummyNotifier.cpp
+  libdiscover/backends/DummyBackend/DummyNotifier.h
+Copyright: 2013, Lukas Appelhans <l.appelhans@gmx.de>
+License: GPL-2+3+KDEeV
+
+Files: libdiscover/backends/FlatpakBackend/*
+Copyright: 2017, Jan Grulich <jgrulich@redhat.com>
+  2013, 2014, 2017, Aleix Pol Gonzalez <aleixpol@blue-systems.com>
+License: GPL-2+3+KDEeV
+
+Files: libdiscover/backends/FlatpakBackend/FlatpakFetchDataJob.cpp
+  libdiscover/backends/FlatpakBackend/FlatpakFetchDataJob.h
+  libdiscover/backends/FlatpakBackend/FlatpakTransactionJob.cpp
+  libdiscover/backends/FlatpakBackend/FlatpakTransactionJob.h
+Copyright: 2017, Jan Grulich <jgrulich@redhat.com>
+License: GPL-2+3+KDEeV
+
+Files: libdiscover/backends/FlatpakBackend/FlatpakNotifier.h
+Copyright: 2017, Jan Grulich <jgrulich@redhat.com>
+  2013, Lukas Appelhans <l.appelhans@gmx.de>
+License: GPL-2+3+KDEeV
+
+Files: libdiscover/backends/PackageKitBackend/PackageKitBackend.cpp
+  libdiscover/backends/PackageKitBackend/PackageKitMessages.cpp
+  libdiscover/backends/PackageKitBackend/PackageKitResource.cpp
+Copyright: 2013, Lukas Appelhans <l.appelhans@gmx.de>
+  2012-2014, Aleix Pol Gonzalez <aleixpol@blue-systems.com>
+License: GPL-2+3+KDEeV
+
+Files: libdiscover/backends/PackageKitBackend/PackageKitNotifier.cpp
+Copyright: 2015, Aleix Pol Gonzalez <aleixpol@blue-systems.com>
+  2013, Lukas Appelhans <l.appelhans@gmx.de>
+License: GPL-2+3+KDEeV
+
+Files: libdiscover/backends/PackageKitBackend/PackageKitNotifier.h
+  libdiscover/backends/PackageKitBackend/PackageKitUpdater.cpp
+  libdiscover/backends/PackageKitBackend/PackageKitUpdater.h
+Copyright: 2013, Lukas Appelhans <l.appelhans@gmx.de>
+License: GPL-2+3+KDEeV
+
+Files: libdiscover/backends/PackageKitBackend/pk-offline-private.h
+Copyright: 2014, Richard Hughes <richard@hughsie.com>
+License: GPL-2+
+
+Files: libdiscover/backends/SnapBackend/SnapNotifier.cpp
+  libdiscover/backends/SnapBackend/SnapNotifier.h
+Copyright: 2013, Lukas Appelhans <l.appelhans@gmx.de>
+License: GPL-2+3+KDEeV
+
+Files: libdiscover/resources/AbstractResourcesBackend.h
+  libdiscover/resources/ResourcesModel.h
+Copyright: 2013, Lukas Appelhans <boom1992@chakra-project.org>
+  2012-2016, Aleix Pol Gonzalez <aleixpol@blue-systems.com>
+  2010-2013, Jonathan Thomas <echidnaman@kubuntu.org>
+License: GPL-2+3+KDEeV
+
+Files: libdiscover/resources/ResourcesProxyModel.cpp
+  libdiscover/resources/ResourcesProxyModel.h
+Copyright: 2012, Aleix Pol Gonzalez <aleixpol@blue-systems.com>
+  2010, Jonathan Thomas <echidnaman@kubuntu.org>
+License: GPL-2+3+KDEeV
+
+Files: libdiscover/resources/StandardBackendUpdater.cpp
+  libdiscover/resources/StandardBackendUpdater.h
+Copyright: 2012, 2014, 2015, Aleix Pol Gonzalez <aleixpol@blue-systems.com>
+License: GPL-2+3+KDEeV
+
+Files: libdiscover/utils.h
+Copyright: 2013, Lukas Appelhans <boom1992@chakra-project.org>
+  2012-2016, Aleix Pol Gonzalez <aleixpol@blue-systems.com>
+  2010-2013, Jonathan Thomas <echidnaman@kubuntu.org>
+License: GPL-2+3+KDEeV
+
+Files: notifier/DiscoverNotifierDeclarativePlugin.cpp
+  notifier/DiscoverNotifierDeclarativePlugin.h
+Copyright: 2012, 2014, 2015, Aleix Pol Gonzalez <aleixpol@blue-systems.com>
+License: GPL-2+3+KDEeV
+
+Files: notifier/plasmoid/*
+Copyright: 2013, Lukas Appelhans <boom1992@chakra-project.org>
+  2012-2016, Aleix Pol Gonzalez <aleixpol@blue-systems.com>
+  2010-2013, Jonathan Thomas <echidnaman@kubuntu.org>
+License: GPL-2+3+KDEeV
+
+Files: notifier/qmldir
+Copyright: 2013, Lukas Appelhans <boom1992@chakra-project.org>
+  2012-2016, Aleix Pol Gonzalez <aleixpol@blue-systems.com>
+  2010-2013, Jonathan Thomas <echidnaman@kubuntu.org>
+License: GPL-2+3+KDEeV
+
+License: GPL-2+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; version 2 dated June, 1991, or (at
+ your option) any later version.
+ .
+ On Debian systems, the complete text of version 2 of the GNU General
+ Public License can be found in '/usr/share/common-licenses/GPL-2'.
 
 License: GPL-2+3+KDEeV
  This program is free software; you can redistribute it and/or
@@ -31,151 +195,18 @@ License: GPL-2+3+KDEeV
  text of the GNU General Public License version 3 can be found in the file
  `/usr/share/common-licenses/GPL-3'.
 
-License: LGPL-2.1+
- This program is free software; you can redistribute it and/or modify
- it under the terms of the GNU Lesser General Public License
- version 2.1, or (at your option) any later version, as published by the
- Free Software Foundation
+License: LGPL-2.1
+ This program is free software; you can redistribute it and/or modify it
+ under the terms of the GNU Lesser General Public License as published by the
+ Free Software Foundation; version 2.1 of the License.
  .
- This program is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details
+ On Debian systems, the complete text of version 2.1 of the GNU Lesser
+ General Public License can be found in `/usr/share/common-licenses/LGPL-2.1'.
+
+License: LGPL-3
+ This program is free software; you can redistribute it and/or modify it
+ under the terms of the GNU Lesser General Public License as published by the
+ Free Software Foundation; version 3 of the License.
  .
- You should have received a copy of the GNU Lesser General Public
- License along with this program; if not, write to the
- Free Software Foundation, Inc.,
- 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
- .
- On Debian systems, the full text of the GNU Lesser General Public License
- version 2.1 can be found in the file `/usr/share/common-licenses/LGPL-2.1`.
-
-License: BSD-3-clause
- Redistribution and use in source and binary forms, with or without
- modification, are permitted provided that the following conditions
- are met:
- .
- 1. Redistributions of source code must retain the copyright
-    notice, this list of conditions and the following disclaimer.
- 2. Redistributions in binary form must reproduce the copyright
-    notice, this list of conditions and the following disclaimer in the
-    documentation and/or other materials provided with the distribution.
- 3. The name of the author may not be used to endorse or promote products
-    derived from this software without specific prior written permission.
- .
- THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
- IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
- OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
- IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
- INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
- NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
- DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
- THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
- (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
- THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
-Files: ./libdiscover/*
- ./notifier/*
- ./discover/*
- ./exporter/MuonExporter.cpp
- ./exporter/MuonExporter.h
- ./exporter/main.cpp
- ./libdiscover/*
- ./notifier/*
-Copyright: 2012-2016, Aleix Pol Gonzalez <aleixpol@blue-systems.com>
-License: GPL-2+3+KDEeV
-
-Files: ./libdiscover/Category/Category.cpp
- ./libdiscover/Category/Category.h
- ./libdiscover/ReviewsBackend/Rating.cpp
- ./libdiscover/ReviewsBackend/Rating.h
- ./libdiscover/ReviewsBackend/Review.cpp
- ./libdiscover/ReviewsBackend/Review.h
- ./libdiscover/Transaction/AddonList.cpp
- ./libdiscover/Transaction/AddonList.h
- ./libdiscover/Transaction/Transaction.cpp
- ./libdiscover/Transaction/Transaction.h
- ./libdiscover/Transaction/TransactionModel.cpp
- ./libdiscover/Transaction/TransactionModel.h
- ./libdiscover/UpdateModel/UpdateItem.cpp
- ./libdiscover/UpdateModel/UpdateItem.h
- ./libdiscover/UpdateModel/UpdateModel.cpp
- ./libdiscover/UpdateModel/UpdateModel.h
- ./libdiscover/backends/ApplicationBackend/Application.cpp
- ./libdiscover/backends/ApplicationBackend/Application.h
- ./libdiscover/backends/ApplicationBackend/ApplicationBackend.cpp
- ./libdiscover/backends/ApplicationBackend/ApplicationBackend.h
- ./libdiscover/backends/ApplicationBackend/ReviewsBackend.cpp
- ./libdiscover/backends/ApplicationBackend/ReviewsBackend.h
- ./libdiscover/backends/ApplicationBackend/distupgradeevent/releasechecker
- ./libdiscover/backends/ApplicationBackend/libmuonapt/ChangesDialog.cpp
- ./libdiscover/backends/ApplicationBackend/libmuonapt/ChangesDialog.h
- ./libdiscover/backends/ApplicationBackend/libmuonapt/HistoryView/HistoryProxyModel.cpp
- ./libdiscover/backends/ApplicationBackend/libmuonapt/HistoryView/HistoryProxyModel.h
- ./libdiscover/backends/ApplicationBackend/libmuonapt/HistoryView/HistoryView.cpp
- ./libdiscover/backends/ApplicationBackend/libmuonapt/HistoryView/HistoryView.h
- ./libdiscover/backends/ApplicationBackend/libmuonapt/MuonStrings.cpp
- ./libdiscover/backends/ApplicationBackend/libmuonapt/MuonStrings.h
- ./libdiscover/backends/ApplicationBackend/libmuonapt/QAptActions.cpp
- ./libdiscover/backends/ApplicationBackend/libmuonapt/QAptActions.h
-Copyright: 2010-2013, Jonathan Thomas <echidnaman@kubuntu.org>
-License: GPL-2+3+KDEeV
-
-Files: ./libdiscover/backends/DummyBackend/DummyNotifier.cpp
- ./libdiscover/backends/DummyBackend/DummyNotifier.h
- ./libdiscover/backends/PackageKitBackend/PackageKitNotifier.h
- ./libdiscover/backends/PackageKitBackend/PackageKitUpdater.cpp
- ./libdiscover/backends/PackageKitBackend/PackageKitUpdater.h
-Copyright: 2013, Lukas Appelhans <boom1992@chakra-project.org>
-License: GPL-2+3+KDEeV
-
-Files: ./libdiscover/backends/PackageKitBackend/PackageKitBackend.cpp
- ./libdiscover/backends/PackageKitBackend/PackageKitMessages.cpp
- ./libdiscover/backends/PackageKitBackend/PackageKitNotifier.cpp
- ./libdiscover/backends/PackageKitBackend/PackageKitResource.cpp
-Copyright: 2012-2015, Aleix Pol Gonzalez <aleixpol@blue-systems.com>
-  2013, Lukas Appelhans <l.appelhans@gmx.de>
-License: GPL-2+3+KDEeV
-
-Files: ./libdiscover/backends/ApplicationBackend/qoauth/src/interface.cpp
- ./libdiscover/backends/ApplicationBackend/qoauth/src/interface.h
- ./libdiscover/backends/ApplicationBackend/qoauth/src/interface_p.h
- ./libdiscover/backends/ApplicationBackend/qoauth/src/qoauth_global.h
- ./libdiscover/backends/ApplicationBackend/qoauth/src/qoauth_namespace.h
-Copyright: 2009, Dominik Kapusta <d@ayoy.net>
-License: LGPL-2.1+
-
-Files: ./libdiscover/backends/ApplicationBackend/tests/NotifierTest.cpp
- ./libdiscover/backends/ApplicationBackend/tests/NotifierTest.h
-Copyright: 2015, Harald Sitter <sitter@kde.org>
-License: GPL-2+3+KDEeV
-
-Files: ./cmake/FindQtOAuth.cmake
-Copyright: 2010, Harald Sitter <apachelogger@ubuntu.com>
-  2010, Mehrdad Momeny <mehrdad.momeny@gmail.com>
-License: BSD-3-clause
-
-Files: ./discover/qml/GridItem.qml
-Copyright: 2014, Aleix Pol Gonzalez <aleixpol@blue-systems.com>
-License: LGPL-2.1+
-
-Files: debian/*
-Copyright: 2010, Jonathan Thomas <echidnaman@kubuntu.org>
-           2015, Jonathan Riddell <jr@jriddell.org>
-           2016, Matthias Klumpp <mak@debian.org>
-License: GPL-3+
- This program is free software; you can redistribute it and/or modify
- it under the terms of the GNU General Public License as published by
- the Free Software Foundation; either version 3 of the License, or
- (at your option) any later version.
- .
- This program is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
- .
- You should have received a copy of the GNU General Public License
- along with this program.  If not, see <http://www.gnu.org/licenses/>.
- .
- On Debian systems, the full text of the GNU General Public License
- version 3 can be found in the file `/usr/share/common-licenses/GPL-3'.
+ On Debian systems, the complete text of version 3 of the GNU Lesser
+ General Public License can be found in `/usr/share/common-licenses/LGPL-3'.
