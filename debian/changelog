@@ -18,6 +18,8 @@ plasma-discover (5.12.0-1) experimental; urgency=medium
 
   * New upstream release: 5.12.0
     - Fixes FTBFS with recent PackageKit-Qt (Closes: #889131)
+    - Displays changelogs (Closes: #810588)
+    - Features KDE applications (Closes: #851617)
   * d/watch: Use secure URL
 
  -- Matthias Klumpp <mak@debian.org>  Wed, 07 Feb 2018 14:45:22 +0100
